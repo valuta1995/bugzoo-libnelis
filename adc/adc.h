@@ -8,15 +8,30 @@
 #define ADC_RESOLUTION                      (1<<MCP4728_RESOLUTION_BITS)
 
 struct adc_data_s {
-    uint16_t data[4];
-    float    val[4];
+    uint16_t data;
+    float val;
 };
 
-extern adc_data_s adc_data;
+extern adc_data_s* adc_data;
 
+/**
+ * Initializes the ADC of the BugZoo Control box.
+ */
 void adc_init();
-uint16_t adc_read(uint8_t freedom_ain_channel);     // Get ADC conversion result for ain0 (ADC0_SE16), ain1 (ADC1_SE16), ain2 (ADC1_SE18) or ain3 (ADC1_SE23)
-void adc_readall();
+
+/**
+ * Read a value from one of the analog input channels of the ADC of the BugZoo Control box.
+ * To convert to voltage, divide the output by the maximum output (UINT16_MAX) and multiply by v_ref.
+ * @param freedom_ain_channel channel number to read from.
+ * @return unsigned 16 bit integer representing the read voltage level.
+ */
+uint16_t adc_read(uint8_t freedom_ain_channel);
+
+/**
+ * Populates a given struct with the data for all ADC inputs.
+ * @param adc_data pointer to the struct in which the results will be placed.
+ */
+void adc_readall(adc_data_s* adc_data);
 
 
 #endif
