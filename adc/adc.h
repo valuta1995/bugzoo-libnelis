@@ -12,7 +12,8 @@ struct adc_data_s {
     float val;
 };
 
-extern adc_data_s* adc_data;
+
+extern adc_data_s adc_data[4];
 
 /**
  * Initializes the ADC of the BugZoo Control box.

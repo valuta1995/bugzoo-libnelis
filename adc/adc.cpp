@@ -1,4 +1,6 @@
 #include "adc.h"
+#include <cstdint>
+#include <cstdio>
 
 // See MK66F18.h in mbed-os dir for register names
 
@@ -7,7 +9,7 @@ static void adc1_config();
 static void adc0_calibrate();
 static void adc1_calibrate();
 
-adc_data_s adc_data;
+adc_data_s adc_data[4];
 
 void adc_init()
 {
@@ -148,10 +150,10 @@ uint16_t adc_read(uint8_t freedom_ain_channel)
 // FIXME: untested
 void adc_readall(adc_data_s* adc_data)
 {
-    uint8_t ch;
-    for (ch=0; ch<4; ch++) {
-        adc_data->data[ch] = adc_read(ch);
-        adc_data->val[ch]  = adc_data->data[ch] * system_vref_voltage / ADC_RESOLUTION;
+    for (uint8_t ch = 0; ch < 4; ch++) {
+        uint16_t raw = adc_read(ch);
+        adc_data[ch].data = raw;
+        adc_data[ch].val = (raw * system_vref_voltage) / UINT16_MAX;
     }
 }
 
