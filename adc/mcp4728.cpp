@@ -1,13 +1,12 @@
 #include "mcp4728.h"
 #include "board_freedom.h"
 
-void mcp4728_init()
-{
-    char  buf[8];
+void mcp4728_init() {
+    char buf[8];
     uint16_t val;
 
     // Reference voltage = VDD
-    buf[0] = MCP4728_CMD_VREF | MCP4728_VREF(0); 
+    buf[0] = MCP4728_CMD_VREF | MCP4728_VREF(0);
     i2c.write(MCP4728_ADDRESS, buf, 1);
 
     // Powerdown = normal
@@ -33,8 +32,7 @@ void mcp4728_init()
 }
 
 
-void mcp4728_write(uint8_t ch, uint16_t val)
-{
+void mcp4728_write(uint8_t ch, uint16_t val) {
     char buf[3];
 
     // One channel, multi-write
@@ -47,8 +45,7 @@ void mcp4728_write(uint8_t ch, uint16_t val)
 }
 
 
-void mcp4728_write_voltage(uint8_t ch, float voltage)
-{
+void mcp4728_write_voltage(uint8_t ch, float voltage) {
     uint16_t val;
 
     val = (uint16_t)(voltage * 0xfff / system_vref_voltage);

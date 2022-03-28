@@ -1,3 +1,10 @@
+/**
+ * API for interacting with the Analog input ADC of the BugZoo Control box.
+ * @author Niels Althuisius.
+ * @author Glenn Visser
+ */
+
+
 #ifndef _ADC_H_
 #define _ADC_H_
 

@@ -7,7 +7,7 @@
 #define KEYPRESS_BEEP_ENABLED   true
 #define KEYPRESS_BEEP_LENGTH_MS 2
 
-#define KEYPAD_KEY_0        '0'
+#define            KEYPAD_KEY_0        '0'
 #define KEYPAD_KEY_1        '1'
 #define KEYPAD_KEY_2        '2'
 #define KEYPAD_KEY_3        '3'
@@ -27,8 +27,20 @@
 extern bool keypad_keypress;
 extern uint8_t keypad_key;
 
-void    keypad_init();
-void    keypad_set_scan_flag();
+/**
+ * Initialize the keypad on the front panel of the control box.
+ */
+void keypad_init();
+
+/**
+ * Set the flag such that the keypad must be scanned when next possible.
+ */
+void keypad_set_scan_flag();
+
+/**
+ * Scan the keypad, only if flag enabled.
+ * @return Key code.
+ */
 uint8_t keypad_scan();
 
 #endif

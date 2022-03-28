@@ -1,3 +1,9 @@
+/**
+ * API for interacting with most built-in components of the BugZoo Control box.
+ * @author Niels Althuisius
+ * @author Glenn Visser
+ */
+
 #ifndef _BOARD_FREEDOM_H_
 #define _BOARD_FREEDOM_H_
 
@@ -40,19 +46,18 @@ extern DigitalOut dout4;
 extern DigitalOut dout5;
 extern DigitalOut dout6;
 
-extern DigitalIn  din0;
-extern DigitalIn  din1;
-extern DigitalIn  din2;
-extern DigitalIn  din3;
-extern DigitalIn  din4;
-extern DigitalIn  din5;
-extern DigitalIn  din6;
+extern DigitalIn din0;
+extern DigitalIn din1;
+extern DigitalIn din2;
+extern DigitalIn din3;
+extern DigitalIn din4;
+extern DigitalIn din5;
+extern DigitalIn din6;
 
-extern PwmOut     pwm0;
-extern PwmOut     pwm1;
-extern PwmOut     pwm2;
-extern PwmOut     pwm3;
-
+extern PwmOut pwm0;
+extern PwmOut pwm1;
+extern PwmOut pwm2;
+extern PwmOut pwm3;
 
 
 // FIXME: Something is wrong with these pin 'numbers'
@@ -61,8 +66,12 @@ extern AnalogIn ain1;
 extern AnalogIn ain2;
 extern AnalogIn ain3;
 
-extern DigitalOut  oled_cs;
-extern DigitalOut  i2c_buff_nen;    // /EN pin on the TCA9406 I2C buffer (inverted: 0=enable, 1=disable)
+extern DigitalOut oled_cs;
+/**
+ * The (not-)enable pin of the TCA9406 I2C buffer.
+ * The function is inverted: 0 = enable, 1 = disable.
+ */
+extern DigitalOut i2c_buff_nen;
 extern InterruptIn mcp_int_a;
 extern InterruptIn mcp_int_b;
 
@@ -107,9 +116,29 @@ extern DigitalOut BOARD_LED_BLUE;
 #define MCP_GPB_POL     0b00001111
 #define MCP_GPB_INT     0b00001111
 
+/**
+ * Initialize the board.
+ * In most cases this is the only initialization you will need to call as it in turn initializes all other components.
+ */
 void board_init();
-void dout_write(uint8_t db);
+
+/**
+ * Write a byte of data to the entirety of the digital out pins.
+ * The least significant bit goes to dout0. The second to least to dout1 and so on, all the way up to dout6 (7th bit).
+ * @param data The byte to be written to the dout pins.
+ */
+void dout_write(uint8_t data);
+
+/**
+ * The same as dout_write, in the same order, but this time it is reading from the din pins.
+ * @return A byte with the bits set to the values of the din pins.
+ */
 uint8_t din_read();
+
+/**
+ * Adjust the system's vref voltage.
+ * @param vref The vref value to be set (default: 3.0)
+ */
 void system_set_vref_voltage(float vref);
 
 #endif

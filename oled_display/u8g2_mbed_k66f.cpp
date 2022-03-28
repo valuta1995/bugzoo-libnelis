@@ -3,10 +3,8 @@
 #include "mbed.h"
 #include "board_freedom.h"
 
-uint8_t u8x8_gpio_and_delay_mbed(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr)
-{
-    switch (msg)
-    {
+uint8_t u8x8_gpio_and_delay_mbed(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr) {
+    switch (msg) {
         case U8X8_MSG_GPIO_AND_DELAY_INIT:
             break;
         case U8X8_MSG_DELAY_NANO:
@@ -30,7 +28,7 @@ uint8_t u8x8_gpio_and_delay_mbed(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, voi
             /* not required for HW SPI */
             break;
 
-        /* cases for D0 .. D7 and SPI_CLOCK/SPI_DATA skipped, not required for HW SPI */
+            /* cases for D0 .. D7 and SPI_CLOCK/SPI_DATA skipped, not required for HW SPI */
 
         case U8X8_MSG_GPIO_I2C_CLOCK:
             /* not required for HW SPI */
@@ -42,19 +40,19 @@ uint8_t u8x8_gpio_and_delay_mbed(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, voi
             /* connected to system reset on our system */
             break;
 
-        /* cases for menu skipped */
-    default:
-        u8x8_SetGPIOResult(u8x8, 1);
-        break;
-  }
-  return 1;
+            /* cases for menu skipped */
+        default:
+            u8x8_SetGPIOResult(u8x8, 1);
+            break;
+    }
+    return 1;
 }
 
 
 extern "C" uint8_t u8x8_byte_k66f_3wire_hw_spi(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr) {
     uint8_t *data;
     static uint8_t last_dc;
-    switch(msg) {
+    switch (msg) {
         case U8X8_MSG_BYTE_INIT:
             // Send once during the init phase of the display.
 //            u8x8_gpio_SetCS(u8x8, u8x8->display_info->chip_disable_level);                // disable chipselect
@@ -76,13 +74,13 @@ extern "C" uint8_t u8x8_byte_k66f_3wire_hw_spi(u8x8_t *u8x8, uint8_t msg, uint8_
             break;
         case U8X8_MSG_BYTE_SEND:
             // Send one or more bytes, located at arg_ptr, arg_int contains the number of bytes.
-            data = (uint8_t *)arg_ptr;
-            while( arg_int > 0 ) {
+            data = (uint8_t *) arg_ptr;
+            while (arg_int > 0) {
                 // 3-wire mode, so 9-bit transfer: 1 D/C bit, 8 data bits
                 if (last_dc == 0) {
-                        oled_spi.write( (uint8_t)*data );                  // D/C = 0
+                    oled_spi.write((uint8_t) * data);                  // D/C = 0
                 } else {
-                        oled_spi.write( 0x100 | (uint8_t)*data );  // D/C = 1
+                    oled_spi.write(0x100 | (uint8_t) * data);  // D/C = 1
                 }
                 data++;
                 arg_int--;
@@ -97,6 +95,6 @@ extern "C" uint8_t u8x8_byte_k66f_3wire_hw_spi(u8x8_t *u8x8, uint8_t msg, uint8_
             break;
         default:
             return 0;
-    }  
+    }
     return 1;
 }

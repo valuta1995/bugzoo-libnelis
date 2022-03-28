@@ -7,22 +7,19 @@ bool keypad_scan_go = false;
 bool keypad_isr_go = false;
 
 
-void keypad_init()
-{
+void keypad_init() {
     keypad_scan_ticker.attach(&keypad_set_scan_flag, KEYPAD_SCAN_RATE_MS);
     mcp.write_mask(0x00, 0b00111100);               // Set all column bits to zero
 }
 
 
 // The I2C library isn't thread or interrupt safe, so just set a flag and run it from main (?)
-void keypad_set_scan_flag()
-{
+void keypad_set_scan_flag() {
     keypad_scan_go = true;
 }
 
 
-uint8_t keypad_scan()
-{
+uint8_t keypad_scan() {
     // Only run when told so by the ticker flag
     if (keypad_scan_go == false) {
         return 0;
@@ -41,7 +38,7 @@ uint8_t keypad_scan()
     if (row == 0x00) {
         key_released = true;
         // No key pressed, or keypress not processed
-    } 
+    }
     if (row != 0x00 && key_released == true) {
         // Key pressed, scan it
         key_released = false;
@@ -49,7 +46,7 @@ uint8_t keypad_scan()
             col = 0b00011100;
             mcp.write_mask(col, col_mask);
             row = mcp.read_mask(0b11000011);
-            if ( row != 0) {
+            if (row != 0) {
                 keypad_keypress = 1;
             }
         }
@@ -58,7 +55,7 @@ uint8_t keypad_scan()
             col = 0b00101100;
             mcp.write_mask(col, col_mask);
             row = mcp.read_mask(0b11000011);
-            if ( row != 0) {
+            if (row != 0) {
                 keypad_keypress = 1;
             }
         }
@@ -67,7 +64,7 @@ uint8_t keypad_scan()
             col = 0b00110100;
             mcp.write_mask(col, col_mask);
             row = mcp.read_mask(0b11000011);
-            if ( row != 0) {
+            if (row != 0) {
                 keypad_keypress = 1;
             }
         }
@@ -76,7 +73,7 @@ uint8_t keypad_scan()
             col = 0b00111000;
             mcp.write_mask(col, col_mask);
             row = mcp.read_mask(0b11000011);
-            if ( row != 0) {
+            if (row != 0) {
                 keypad_keypress = 1;
             }
         }
@@ -85,14 +82,14 @@ uint8_t keypad_scan()
         key = row | col;
         keypad_keypress = 1;
         //printf("kp: %02x\n", key);                      // Shows raw key codes
- 
+
 #if KEYPRESS_BEEP_ENABLED == true
         buzz = 1;
         thread_sleep_for(KEYPRESS_BEEP_LENGTH_MS);
         buzz = 0;
 #endif
 
-        switch(key) {
+        switch (key) {
             case 0x74:
                 key = KEYPAD_KEY_0;
                 break;

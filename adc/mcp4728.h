@@ -1,3 +1,8 @@
+/**
+ * API for interacting and parsing the MCP4728
+ * @author Niels Althuisius
+ */
+
 #ifndef _MCP4728_H_
 #define _MCP4728_H_
 
@@ -145,11 +150,23 @@
 #define MCP4728_GAIN_D(x)                       (((uint8_t)(((uint8_t)(x)) << MCP4728_GAIN_D_SHIFT)) & MCP4728_GAIN_D_MASK)
 
 
-
 extern float mcp4728_vref_voltage;
 
+/**
+ * Initialize the mcp4728 ADC
+ */
 void mcp4728_init();
+
+/**
+ * Write data to the MCP4728.
+ * For day to day use refer to adc.h instead.
+ */
 void mcp4728_write(uint8_t ch, uint16_t val);
+
+/**
+ * Write converted data to the MCP4728.
+ * For day to day use refer to adc.h instead.
+ */
 void mcp4728_write_voltage(uint8_t ch, float voltage);
 
 #endif
