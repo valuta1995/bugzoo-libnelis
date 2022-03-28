@@ -10,7 +10,10 @@ extern volatile bool buttons_changed;
  */
 void button_init();
 
-//void button_isr();
+/**
+ * Interrupt routine to be called by the system when a button is pressed.
+ */
+void button_isr();
 
 /**
  * Get the current state of one of the buttons.
