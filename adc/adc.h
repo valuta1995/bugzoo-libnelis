@@ -14,6 +14,10 @@
 #define ADC_RESOLUTION_BITS                 (16U)
 #define ADC_RESOLUTION                      (1<<MCP4728_RESOLUTION_BITS)
 
+
+/**
+ * Contains both the raw 'data' read from the ADC as well as the voltage ('val').
+ */
 struct adc_data_s {
     uint16_t data;
     float val;
