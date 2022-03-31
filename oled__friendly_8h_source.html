@@ -99,7 +99,13 @@ $(document).ready(function(){initNavTree('oled__friendly_8h_source.html',''); in
 <div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="oled__friendly_8h.html#adb97ddaa53ea8abb0bf6e07ef53023a0">   10</a></span>&#160;<span class="preprocessor">#define FONT_LARGE u8g2_font_10x20_tf</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="oled__friendly_8h.html#a466256461b3082a585a94e135e3d29a0">   11</a></span>&#160;<span class="preprocessor">#define FONT_LARGE_MONO u8g2_font_profont22_tf</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * Display a single line message to the Box&#39; oled display. Only works on a limited set of fonts.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * These fonts have been analysed for the proper positioning; other fonts will not work.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * @param message A c string containing the message (null terminated).</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * @param font The font to be used. Should be one of the fonts listed in this header file. Defaults to Medium.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oled__friendly_8h.html#ad8f7e67fb3581ac0228ccc572da21ec3">oled_friendly_display_one_line</a>(<span class="keywordtype">char</span> * message, <span class="keyword">const</span> uint8_t * font=<a class="code" href="oled__friendly_8h.html#a5c7fe6989ead3a5e9adcac39717eb69f">FONT_MEDIUM</a>);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif</span></div>

@@ -93,10 +93,10 @@ $(document).ready(function(){initNavTree('adc_8cpp_source.html',''); initResizab
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// See MK66F18.h in mbed-os dir for register names</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> adc0_config();</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> adc1_config();</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> adc0_calibrate();</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> adc1_calibrate();</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="adc_8cpp.html#a2e22d6fc665afa15e31a626dcdcc2400">adc0_config</a>();</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="adc_8cpp.html#a7ef471d3a649b297cb5c0e572985ff0f">adc1_config</a>();</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="adc_8cpp.html#aef83e43edbb0ce4660fd24c49f816ba8">adc0_calibrate</a>();</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="adc_8cpp.html#adf7d6df5833e7cc0506ef953a9e895eb">adc1_calibrate</a>();</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="adc_8h.html#a3913fa83a424156fc3be9ee13c4e9b36">   12</a></span>&#160;<a class="code" href="structadc__data__s.html">adc_data_s</a> <a class="code" href="adc_8cpp.html#a3913fa83a424156fc3be9ee13c4e9b36">adc_data</a>[4];</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
@@ -106,14 +106,14 @@ $(document).ready(function(){initNavTree('adc_8cpp_source.html',''); initResizab
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    SIM-&gt;SCGC6 |= SIM_SCGC6_ADC0_MASK;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    SIM-&gt;SCGC3 |= SIM_SCGC3_ADC1_MASK;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    adc0_config();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    adc0_calibrate();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="adc_8cpp.html#a2e22d6fc665afa15e31a626dcdcc2400">adc0_config</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="adc_8cpp.html#aef83e43edbb0ce4660fd24c49f816ba8">adc0_calibrate</a>();</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    adc1_config();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    adc1_calibrate();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="adc_8cpp.html#a7ef471d3a649b297cb5c0e572985ff0f">adc1_config</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="adc_8cpp.html#adf7d6df5833e7cc0506ef953a9e895eb">adc1_calibrate</a>();</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keywordtype">void</span> adc0_config()</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="adc_8cpp.html#a2e22d6fc665afa15e31a626dcdcc2400">   27</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="adc_8cpp.html#a2e22d6fc665afa15e31a626dcdcc2400">adc0_config</a>()</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// Uses the same settings as recommended for calibration (AVG=32, ADC_CLK&lt;4MHz)</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// ADC_CLK = (BUSCLK/2) / 8 = (60/2)/8=3.75MHz. Max ADC_CLK is 24MHz however so a conversion just takes a little more time. Maybe more accurate though.</span></div>
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('adc_8cpp_source.html',''); initResizab
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">void</span> adc1_config()</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="adc_8cpp.html#a7ef471d3a649b297cb5c0e572985ff0f">   39</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="adc_8cpp.html#a7ef471d3a649b297cb5c0e572985ff0f">adc1_config</a>()</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// Uses the same settings as recommended for calibration (AVG=32, ADC_CLK&lt;4MHz)</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">// ADC_CLK = (BUSCLK/2) / 8 = (60/2)/8=3.75MHz. Max ADC_CLK is 24MHz however so a conversion just takes a little more time. Maybe more accurate though.</span></div>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('adc_8cpp_source.html',''); initResizab
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">void</span> adc0_calibrate()</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="adc_8cpp.html#aef83e43edbb0ce4660fd24c49f816ba8">   51</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="adc_8cpp.html#aef83e43edbb0ce4660fd24c49f816ba8">adc0_calibrate</a>()</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    uint16_t gcal = 0;      <span class="comment">// Gain calibration</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
@@ -174,7 +174,7 @@ $(document).ready(function(){initNavTree('adc_8cpp_source.html',''); initResizab
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keywordtype">void</span> adc1_calibrate()</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="adc_8cpp.html#adf7d6df5833e7cc0506ef953a9e895eb">   88</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="adc_8cpp.html#adf7d6df5833e7cc0506ef953a9e895eb">adc1_calibrate</a>()</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    uint16_t gcal = 0;      <span class="comment">// Gain calibration</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
@@ -250,9 +250,13 @@ $(document).ready(function(){initNavTree('adc_8cpp_source.html',''); initResizab
 </div><!-- doc-content -->
 <div class="ttc" id="aadc_8cpp_html_a3913fa83a424156fc3be9ee13c4e9b36"><div class="ttname"><a href="adc_8cpp.html#a3913fa83a424156fc3be9ee13c4e9b36">adc_data</a></div><div class="ttdeci">adc_data_s adc_data[4]</div><div class="ttdef"><b>Definition:</b> <a href="adc_8cpp_source.html#l00012">adc.cpp:12</a></div></div>
 <div class="ttc" id="astructadc__data__s_html_af1c3e8b36c4d28352209c40e633cf378"><div class="ttname"><a href="structadc__data__s.html#af1c3e8b36c4d28352209c40e633cf378">adc_data_s::data</a></div><div class="ttdeci">uint16_t data</div><div class="ttdef"><b>Definition:</b> <a href="adc_8h_source.html#l00022">adc.h:22</a></div></div>
+<div class="ttc" id="aadc_8cpp_html_a2e22d6fc665afa15e31a626dcdcc2400"><div class="ttname"><a href="adc_8cpp.html#a2e22d6fc665afa15e31a626dcdcc2400">adc0_config</a></div><div class="ttdeci">static void adc0_config()</div><div class="ttdef"><b>Definition:</b> <a href="adc_8cpp_source.html#l00027">adc.cpp:27</a></div></div>
 <div class="ttc" id="aadc_8h_html"><div class="ttname"><a href="adc_8h.html">adc.h</a></div></div>
 <div class="ttc" id="aadc_8cpp_html_a1e942fcd91f79d49e4ddb8d7e9d3ef95"><div class="ttname"><a href="adc_8cpp.html#a1e942fcd91f79d49e4ddb8d7e9d3ef95">adc_init</a></div><div class="ttdeci">void adc_init()</div><div class="ttdef"><b>Definition:</b> <a href="adc_8cpp_source.html#l00014">adc.cpp:14</a></div></div>
+<div class="ttc" id="aadc_8cpp_html_adf7d6df5833e7cc0506ef953a9e895eb"><div class="ttname"><a href="adc_8cpp.html#adf7d6df5833e7cc0506ef953a9e895eb">adc1_calibrate</a></div><div class="ttdeci">static void adc1_calibrate()</div><div class="ttdef"><b>Definition:</b> <a href="adc_8cpp_source.html#l00088">adc.cpp:88</a></div></div>
 <div class="ttc" id="aadc_8cpp_html_a3e8fd1a80f9ba73721a1a1fcef6a4c1c"><div class="ttname"><a href="adc_8cpp.html#a3e8fd1a80f9ba73721a1a1fcef6a4c1c">adc_read</a></div><div class="ttdeci">uint16_t adc_read(uint8_t freedom_ain_channel)</div><div class="ttdef"><b>Definition:</b> <a href="adc_8cpp_source.html#l00125">adc.cpp:125</a></div></div>
+<div class="ttc" id="aadc_8cpp_html_aef83e43edbb0ce4660fd24c49f816ba8"><div class="ttname"><a href="adc_8cpp.html#aef83e43edbb0ce4660fd24c49f816ba8">adc0_calibrate</a></div><div class="ttdeci">static void adc0_calibrate()</div><div class="ttdef"><b>Definition:</b> <a href="adc_8cpp_source.html#l00051">adc.cpp:51</a></div></div>
+<div class="ttc" id="aadc_8cpp_html_a7ef471d3a649b297cb5c0e572985ff0f"><div class="ttname"><a href="adc_8cpp.html#a7ef471d3a649b297cb5c0e572985ff0f">adc1_config</a></div><div class="ttdeci">static void adc1_config()</div><div class="ttdef"><b>Definition:</b> <a href="adc_8cpp_source.html#l00039">adc.cpp:39</a></div></div>
 <div class="ttc" id="aadc_8cpp_html_a7e16787032d69ac2c9c32d404724d177"><div class="ttname"><a href="adc_8cpp.html#a7e16787032d69ac2c9c32d404724d177">adc_readall</a></div><div class="ttdeci">void adc_readall(adc_data_s *adc_data)</div><div class="ttdef"><b>Definition:</b> <a href="adc_8cpp_source.html#l00151">adc.cpp:151</a></div></div>
 <div class="ttc" id="astructadc__data__s_html_aaadb4ecd086338b6015c779c9ddc93e9"><div class="ttname"><a href="structadc__data__s.html#aaadb4ecd086338b6015c779c9ddc93e9">adc_data_s::val</a></div><div class="ttdeci">float val</div><div class="ttdef"><b>Definition:</b> <a href="adc_8h_source.html#l00023">adc.h:23</a></div></div>
 <div class="ttc" id="aboard__freedom_8cpp_html_afb7b78e18d073c7194b0e1a7aacd2937"><div class="ttname"><a href="board__freedom_8cpp.html#afb7b78e18d073c7194b0e1a7aacd2937">system_vref_voltage</a></div><div class="ttdeci">float system_vref_voltage</div><div class="ttdef"><b>Definition:</b> <a href="board__freedom_8cpp_source.html#l00020">board_freedom.cpp:20</a></div></div>

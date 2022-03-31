@@ -1,5 +1,11 @@
 var NAVTREEINDEX1 =
 {
+"keypad_8h.html":[2,0,1,5],
+"keypad_8h.html#a03a9dd6dbe14322e8e0e8d05281d3c4b":[2,0,1,5,10],
+"keypad_8h.html#a0a03ff3b3561b54ac338a382805a02f9":[2,0,1,5,23],
+"keypad_8h.html#a0c8378d0aed381ea02ad7e38c7e1bf72":[2,0,1,5,18],
+"keypad_8h.html#a1b4c8cbe69268be4566e1edbb9348e4c":[2,0,1,5,13],
+"keypad_8h.html#a1c34fc6f48366ae6334736730fd9b0e7":[2,0,1,5,19],
 "keypad_8h.html#a2754a65389a19a22bb954c90d59834f7":[2,0,1,5,11],
 "keypad_8h.html#a39c000144753c21ac6d37529de4dbe6e":[2,0,1,5,24],
 "keypad_8h.html#a3df5f1b9e975540d1b385be6691e2f5c":[2,0,1,5,1],
@@ -179,6 +185,7 @@ var NAVTREEINDEX1 =
 "u8g2__mbed__k66f_8h.html#ad7ee826d0dcd1a287ed0d984a25cf042":[2,0,3,7,0],
 "u8g2__mbed__k66f_8h_source.html":[2,0,3,7],
 "vukip-logo_8h.html":[2,0,3,0,1],
+"vukip-logo_8h.html#a2c00c12d49f2cb1e5dc89bde96a4c59e":[2,0,3,0,1,2],
 "vukip-logo_8h.html#aa770ee35ca534fe753d28a414f788f7d":[2,0,3,0,1,0],
 "vukip-logo_8h.html#afcc7923930f3efaa0cc6ca56e9446163":[2,0,3,0,1,1],
 "vukip-logo_8h_source.html":[2,0,3,0,1]

@@ -1,10 +1,14 @@
 var NAVTREEINDEX0 =
 {
 "adc_8cpp.html":[2,0,0,0],
-"adc_8cpp.html#a1e942fcd91f79d49e4ddb8d7e9d3ef95":[2,0,0,0,0],
-"adc_8cpp.html#a3913fa83a424156fc3be9ee13c4e9b36":[2,0,0,0,3],
-"adc_8cpp.html#a3e8fd1a80f9ba73721a1a1fcef6a4c1c":[2,0,0,0,1],
-"adc_8cpp.html#a7e16787032d69ac2c9c32d404724d177":[2,0,0,0,2],
+"adc_8cpp.html#a1e942fcd91f79d49e4ddb8d7e9d3ef95":[2,0,0,0,4],
+"adc_8cpp.html#a2e22d6fc665afa15e31a626dcdcc2400":[2,0,0,0,1],
+"adc_8cpp.html#a3913fa83a424156fc3be9ee13c4e9b36":[2,0,0,0,7],
+"adc_8cpp.html#a3e8fd1a80f9ba73721a1a1fcef6a4c1c":[2,0,0,0,5],
+"adc_8cpp.html#a7e16787032d69ac2c9c32d404724d177":[2,0,0,0,6],
+"adc_8cpp.html#a7ef471d3a649b297cb5c0e572985ff0f":[2,0,0,0,3],
+"adc_8cpp.html#adf7d6df5833e7cc0506ef953a9e895eb":[2,0,0,0,2],
+"adc_8cpp.html#aef83e43edbb0ce4660fd24c49f816ba8":[2,0,0,0,0],
 "adc_8cpp_source.html":[2,0,0,0],
 "adc_8h.html":[2,0,0,1],
 "adc_8h.html#a00978ca9e8220475258dcbbbb7d29129":[2,0,0,1,1],
@@ -164,7 +168,9 @@ var NAVTREEINDEX0 =
 "board__freedom_8h.html#afd08432b9b6b43dd88ce89b88fa933e9":[2,0,1,1,45],
 "board__freedom_8h_source.html":[2,0,1,1],
 "bugzoo-logo_8h.html":[2,0,3,0,0],
+"bugzoo-logo_8h.html#a08b9f72dba28376c8252923632e31424":[2,0,3,0,0,5],
 "bugzoo-logo_8h.html#a0dccb37e5d441adfa4b83ded106388c1":[2,0,3,0,0,0],
+"bugzoo-logo_8h.html#a7b4a6c08f12fc8f96148c66530a0f838":[2,0,3,0,0,4],
 "bugzoo-logo_8h.html#a93cb319a5d18ee63419297e9387550fd":[2,0,3,0,0,3],
 "bugzoo-logo_8h.html#aa1a4e13f7a27ddc4412aa6e5b3752633":[2,0,3,0,0,2],
 "bugzoo-logo_8h.html#aa49be780c0295a44c4fdb0c56f1883ba":[2,0,3,0,0,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX0 =
 "keypad_8cpp.html#ae3f5754face3bee3d38e6cda05a30c00":[2,0,1,4,14],
 "keypad_8cpp.html#af37df816ded5aac3ceadc394e7cdcb24":[2,0,1,4,17],
 "keypad_8cpp.html#afaf068214b54ab90e96af2d09c5ded6f":[2,0,1,4,8],
-"keypad_8cpp_source.html":[2,0,1,4],
-"keypad_8h.html":[2,0,1,5],
-"keypad_8h.html#a03a9dd6dbe14322e8e0e8d05281d3c4b":[2,0,1,5,10],
-"keypad_8h.html#a0a03ff3b3561b54ac338a382805a02f9":[2,0,1,5,23],
-"keypad_8h.html#a0c8378d0aed381ea02ad7e38c7e1bf72":[2,0,1,5,18],
-"keypad_8h.html#a1b4c8cbe69268be4566e1edbb9348e4c":[2,0,1,5,13],
-"keypad_8h.html#a1c34fc6f48366ae6334736730fd9b0e7":[2,0,1,5,19]
+"keypad_8cpp_source.html":[2,0,1,4]
 };

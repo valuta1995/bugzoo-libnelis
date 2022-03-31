@@ -96,7 +96,10 @@ $(document).ready(function(){initNavTree('keypad_8h_source.html',''); initResiza
 <div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="keypad_8h.html#ab1f087d55a733e9724891ecdd2ce08ba">    7</a></span>&#160;<span class="preprocessor">#define KEYPAD_SCAN_RATE_MS     50ms</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="keypad_8h.html#af2c149755fac015bddd7a4ee6c260ecf">    8</a></span>&#160;<span class="preprocessor">#define KEYPRESS_BEEP_ENABLED   true</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="keypad_8h.html#af4c019b8073ff9594a383a5df9c15428">    9</a></span>&#160;<span class="preprocessor">#define KEYPRESS_BEEP_LENGTH_MS 2</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * Numerical keys. Represented by numbers 0 through 1. Or by characters &#39;0&#39; through &#39;1&#39;;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="keypad_8h.html#aaa1769e6bde5d15d62163003dc4dac3f">   14</a></span>&#160;<span class="preprocessor">#define NUM_0_KEY 0b01001000</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="keypad_8h.html#a03a9dd6dbe14322e8e0e8d05281d3c4b">   15</a></span>&#160;<span class="preprocessor">#define NUM_1_KEY 0b00000101</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="keypad_8h.html#a2754a65389a19a22bb954c90d59834f7">   16</a></span>&#160;<span class="preprocessor">#define NUM_2_KEY 0b00001001</span></div>
@@ -107,11 +110,17 @@ $(document).ready(function(){initNavTree('keypad_8h_source.html',''); initResiza
 <div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="keypad_8h.html#a44cb303bea6f62b915d59c93e846aa11">   21</a></span>&#160;<span class="preprocessor">#define NUM_7_KEY 0b10000100</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="keypad_8h.html#a6eb1ce60b4377629beb1d04a4fdb0272">   22</a></span>&#160;<span class="preprocessor">#define NUM_8_KEY 0b10001000</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="keypad_8h.html#a0c8378d0aed381ea02ad7e38c7e1bf72">   23</a></span>&#160;<span class="preprocessor">#define NUM_9_KEY 0b10010000</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * Special keys represented by &#39;.&#39;, &#39;U&#39;, and &#39;D&#39;.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="keypad_8h.html#ac3487211e11d046b35a6d70f640801c1">   28</a></span>&#160;<span class="preprocessor">#define DOT_KEY 0b01010000</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="keypad_8h.html#a1c34fc6f48366ae6334736730fd9b0e7">   29</a></span>&#160;<span class="preprocessor">#define UP_KEY 0b00100001</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="keypad_8h.html#a687b69f632086f6e1a03279964257c24">   30</a></span>&#160;<span class="preprocessor">#define DOWN_KEY 0b00100010</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"> * Even more special keys. Represented by &#39;\e&#39; (escape), &#39;\n&#39; (enter or newline), and 0x7f (delete)</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="keypad_8h.html#a9b4f59fc9220530978f12905fe51b1d0">   35</a></span>&#160;<span class="preprocessor">#define ESC_KEY 0b01000100</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="keypad_8h.html#afba17fd121bcd7abc852f1ae1f3abb58">   36</a></span>&#160;<span class="preprocessor">#define ENTER_KEY 0b01100000</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="keypad_8h.html#a3df5f1b9e975540d1b385be6691e2f5c">   37</a></span>&#160;<span class="preprocessor">#define DEL_KEY 0b10100000</span></div>
@@ -123,15 +132,34 @@ $(document).ready(function(){initNavTree('keypad_8h_source.html',''); initResiza
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">extern</span> Queue&lt;keyboard_event_t, 32&gt; <a class="code" href="keypad_8h.html#a51697d6427382d98dd058a06bd232866">keypadEventQueue</a>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"> * Initialize the keypad on the front panel of the control box.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">void</span> <a class="code" href="keypad_8h.html#a39c000144753c21ac6d37529de4dbe6e">keypad_init</a>();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"> * Check if a key has been pressed.</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"> * @return True if a keypress is available. False if no keypresses are available.</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="keypad_8h.html#a0a03ff3b3561b54ac338a382805a02f9">keypad_has_key</a>();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"> * Get the raw data from the most recent keypress.</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"> * @return Raw data byte from the last key press or 0 if there was no keypress.</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;uint8_t <a class="code" href="keypad_8h.html#a6910dab86cc38d45c7df9ebb0b0efa03">keypad_get_key</a>();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"> * Get the character representation of the last key press.</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"> * @return Character byte representing the last key press or &#39;\0&#39; if the keypress could not be decoded.</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">char</span> <a class="code" href="keypad_8h.html#a65840c4dde6dc20693d954b9be978309">keypad_get_char</a>();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"> * Get the numerical representation of the last key press.</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"> * @return Int representing the number of the last keypress or -1 if the last keypress could not be decoded (or was not a number).</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">int</span> <a class="code" href="keypad_8h.html#a60b56525208d99e5d36cb7dce38c2215">keypad_get_int</a>();</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif</span></div>

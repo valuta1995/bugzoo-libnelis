@@ -87,7 +87,12 @@ $(document).ready(function(){initNavTree('board__freedom_8h_source.html',''); in
 <div class="title">board_freedom.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="board__freedom_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<a href="board__freedom_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * API for interacting with most built-in components of the BugZoo Control box.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * @author Niels Althuisius</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * @author Glenn Visser</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef _BOARD_FREEDOM_H_</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define _BOARD_FREEDOM_H_</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
@@ -150,7 +155,11 @@ $(document).ready(function(){initNavTree('board__freedom_8h_source.html',''); in
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">extern</span> AnalogIn <a class="code" href="board__freedom_8h.html#a7143fc4bde73c86a16b6ed7446bda035">ain2</a>;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">extern</span> AnalogIn <a class="code" href="board__freedom_8h.html#a7a1bb56df25c23c57ad8c45de0104e2e">ain3</a>;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">extern</span> DigitalOut <a class="code" href="board__freedom_8h.html#a849d31ca69a4b0fafbc678460fee331a">oled_cs</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">extern</span> DigitalOut <a class="code" href="board__freedom_8h.html#a849d31ca69a4b0fafbc678460fee331a">oled_cs</a>;<span class="comment"></span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"> * The (not-)enable pin of the TCA9406 I2C buffer.</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"> * The function is inverted: 0 = enable, 1 = disable.</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">extern</span> DigitalOut <a class="code" href="board__freedom_8h.html#a1a2fde300507b48f78dc36784a7259bc">i2c_buff_nen</a>;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">extern</span> InterruptIn <a class="code" href="board__freedom_8h.html#a917baa8606be5da2eecfc7dc5dfed2e2">mcp_int_a</a>;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">extern</span> InterruptIn <a class="code" href="board__freedom_8h.html#ac1dc6909d09b780b3fe6a64ea4e80ac3">mcp_int_b</a>;</div>
@@ -195,13 +204,30 @@ $(document).ready(function(){initNavTree('board__freedom_8h_source.html',''); in
 <div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="board__freedom_8h.html#a46798b92970d6ba1ac1fe47f66a15168">  115</a></span>&#160;<span class="preprocessor">#define MCP_GPB_PULL    0b11101111</span></div>
 <div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="board__freedom_8h.html#af50cfa9a42bd563dd6c565cbeeb86756">  116</a></span>&#160;<span class="preprocessor">#define MCP_GPB_POL     0b00001111</span></div>
 <div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="board__freedom_8h.html#ab96717e7895cd81c476756175bb5cc8e">  117</a></span>&#160;<span class="preprocessor">#define MCP_GPB_INT     0b00001111</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment"> * Initialize the board.</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment"> * In most cases this is the only initialization you will need to call as it in turn initializes all other components.</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keywordtype">void</span> <a class="code" href="board__freedom_8h.html#ad7d81512b0ce3a7214547801a3e41264">board_init</a>();</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment"> * Write a byte of data to the entirety of the digital out pins.</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment"> * The least significant bit goes to dout0. The second to least to dout1 and so on, all the way up to dout6 (7th bit).</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment"> * @param data The byte to be written to the dout pins.</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="keywordtype">void</span> <a class="code" href="board__freedom_8h.html#a59b1d7728ac7e85c7bfd9fdf0b2d039b">dout_write</a>(uint8_t data);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment"> * The same as dout_write, in the same order, but this time it is reading from the din pins.</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment"> * @return A byte with the bits set to the values of the din pins.</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;uint8_t <a class="code" href="board__freedom_8h.html#a90a6e9cfb354fa424a93bc1fa276e4a8">din_read</a>();</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="comment"> * Adjust the system&#39;s vref voltage.</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="comment"> * @param vref The vref value to be set (default: 3.0)</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keywordtype">void</span> <a class="code" href="board__freedom_8h.html#a757d8e2d48f189258871b891b52dd7e9">system_set_vref_voltage</a>(<span class="keywordtype">float</span> vref);</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="preprocessor">#endif</span></div>
