@@ -185,10 +185,17 @@ void freedom_i2c_init() {
 
 void freedom_mcp23017_init() {
     mcp.reset();
-    mcp.config((MCP_GPB_DIR << 8) | MCP_GPA_DIR, (MCP_GPB_PULL << 8) | MCP_GPA_PULL,
-               (MCP_GPB_POL << 8) | MCP_GPA_POL);      // Config direction, pullups and polarity
-    mcp.digitalWordWrite((MCP_GPB_VAL << 8) | MCP_GPA_VAL);                      // Set output values
+    mcp.config(
+        (MCP_GPB_DIR << 8) | MCP_GPA_DIR,   // Set B to input   except for B4;  Set input on        A0,A1,A6,A7 and output on A2,A3,A4,A5.
+        (MCP_GPB_PULL << 8) | MCP_GPA_PULL, // Set B to pull-up except for B4;  Set pull-up for     A0,A1,A6,A7.
+        (MCP_GPB_POL << 8) | MCP_GPA_POL);  // Flip polarity    for B0-B3;      Flip polarity for   A0,A1,A6,A7
+
+    // Zero all pins
+    mcp.digitalWordWrite((MCP_GPB_VAL << 8) | MCP_GPA_VAL);
+
+    // Set interrupts.
     mcp.writeRegister(GPINTEN, (uint16_t)((MCP_GPB_INT << 8) | MCP_GPA_INT));   // Set interrupt pins
+    mcp.readRegister(GPINTEN);
 }
 
 
