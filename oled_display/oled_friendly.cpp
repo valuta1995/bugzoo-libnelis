@@ -3,33 +3,43 @@
  
 
 int8_t get_font_height(const uint8_t * font) {
-    if (font == FONT_SMALL) {
-        return 7;
-    } else if (font == FONT_MEDIUM || font == FONT_MEDIUM_BOLD || font == FONT_MEDIUM_MONO) {
-        return 15;
-    } else if (font == FONT_LARGE) {
-        return 20;
-    } else if (font == FONT_LARGE_MONO) {
-        return 22;
-    } else {
-        return -1;
-    }
+	if (font == FONT_SMALL) {
+		return FONT_SMALL_HEIGHT;
+	} else if (font == FONT_MEDIUM) {
+		return FONT_MEDIUM_HEIGHT;
+	} else if (font == FONT_MEDIUM_BOLD) {
+		return FONT_MEDIUM_BOLD_HEIGHT;
+	} else if (font == FONT_MEDIUM_MONO) {
+		return FONT_MEDIUM_MONO_HEIGHT;
+	} else if (font == FONT_LARGE) {
+		return FONT_LARGE_HEIGHT;
+	} else if (font == FONT_LARGE_BOLD) {
+		return FONT_LARGE_BOLD_HEIGHT;
+	} else if (font == FONT_LARGE_MONO) {
+		return FONT_LARGE_MONO_HEIGHT;
+	} else {
+		return -1;
+	}
 }
 
 int8_t get_font_offset(const uint8_t * font) {
-    if (font == FONT_SMALL) {
-        return 6;
-    } else if (font == FONT_MEDIUM_MONO) {
-        return 9;
-    } else if (font == FONT_MEDIUM || font == FONT_MEDIUM_BOLD) {
-        return 10;
-    } else if (font == FONT_LARGE) {
-        return 13;
-    } else if (font == FONT_LARGE_MONO) {
-        return 14;
-    } else {
-        return -1;
-    }
+	if (font == FONT_SMALL) {
+		return FONT_SMALL_OFFSET;
+	} else if (font == FONT_MEDIUM) {
+		return FONT_MEDIUM_OFFSET;
+	} else if (font == FONT_MEDIUM_BOLD) {
+		return FONT_MEDIUM_BOLD_OFFSET;
+	} else if (font == FONT_MEDIUM_MONO) {
+		return FONT_MEDIUM_MONO_OFFSET;
+	} else if (font == FONT_LARGE) {
+		return FONT_LARGE_OFFSET;
+	} else if (font == FONT_LARGE_BOLD) {
+		return FONT_LARGE_BOLD_OFFSET;
+	} else if (font == FONT_LARGE_MONO) {
+		return FONT_LARGE_MONO_OFFSET;
+	} else {
+		return -1;
+	}
 }
 
 uint8_t previous_tile_width = 0;
