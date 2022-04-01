@@ -3,6 +3,10 @@
 
 #include "oled_ssd1322.h"
 
+#define FONT_TINY u8g2_font_tom_thumb_4x6_tf
+#define FONT_TINY_HEIGHT 6
+#define FONT_TINY_OFFSET 5
+
 #define FONT_SMALL u8g2_font_nokiafc22_tf
 #define FONT_SMALL_HEIGHT 8
 #define FONT_SMALL_OFFSET 7

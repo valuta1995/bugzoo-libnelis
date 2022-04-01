@@ -3,7 +3,9 @@
  
 
 int8_t get_font_height(const uint8_t * font) {
-	if (font == FONT_SMALL) {
+	if (font == FONT_TINY) {
+		return FONT_TINY_HEIGHT;
+	} else if (font == FONT_SMALL) {
 		return FONT_SMALL_HEIGHT;
 	} else if (font == FONT_MEDIUM) {
 		return FONT_MEDIUM_HEIGHT;
@@ -23,7 +25,9 @@ int8_t get_font_height(const uint8_t * font) {
 }
 
 int8_t get_font_offset(const uint8_t * font) {
-	if (font == FONT_SMALL) {
+	if (font == FONT_TINY) {
+		return FONT_TINY_OFFSET;
+	} else if (font == FONT_SMALL) {
 		return FONT_SMALL_OFFSET;
 	} else if (font == FONT_MEDIUM) {
 		return FONT_MEDIUM_OFFSET;
