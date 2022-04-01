@@ -21,5 +21,8 @@ var oled__friendly_8h =
     [ "FONT_SMALL", "oled__friendly_8h.html#abc3b73da5871d66aa5843f50287102e5", null ],
     [ "FONT_SMALL_HEIGHT", "oled__friendly_8h.html#a5599a4766c93ea5ad3b071b1ebcc1726", null ],
     [ "FONT_SMALL_OFFSET", "oled__friendly_8h.html#af7dcc7787ee1e165b5320905211d0839", null ],
+    [ "FONT_TINY", "oled__friendly_8h.html#a848ba50037badf9c045d30e5d12a3522", null ],
+    [ "FONT_TINY_HEIGHT", "oled__friendly_8h.html#a639dd278bdbf7d9578ce3840b175d3b6", null ],
+    [ "FONT_TINY_OFFSET", "oled__friendly_8h.html#ae2f888dd6d5baa1893136923ef4315a1", null ],
     [ "oled_friendly_display_one_line", "oled__friendly_8h.html#ad8f7e67fb3581ac0228ccc572da21ec3", null ]
 ];
