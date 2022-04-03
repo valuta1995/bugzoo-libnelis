@@ -22,12 +22,34 @@ for the JavaScript code in this file
 */
 var NAVTREE =
 [
-  [ "bugzoo-libnelis-docs", "index.html", ]
+  [ "libboxzoo-docs", "index.html", [
+    [ "libboxzoo", "md__r_e_a_d_m_e.html", [
+      [ "Authors", "md__r_e_a_d_m_e.html#autotoc_md1", null ]
+    ] ],
+    [ "Data Structures", "annotated.html", [
+      [ "Data Structures", "annotated.html", "annotated_dup" ],
+      [ "Data Structure Index", "classes.html", null ],
+      [ "Data Fields", "functions.html", [
+        [ "All", "functions.html", null ],
+        [ "Variables", "functions_vars.html", null ]
+      ] ]
+    ] ],
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ],
+      [ "Globals", "globals.html", [
+        [ "All", "globals.html", "globals_dup" ],
+        [ "Functions", "globals_func.html", null ],
+        [ "Variables", "globals_vars.html", null ],
+        [ "Macros", "globals_defs.html", null ]
+      ] ]
+    ] ]
+  ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"index.html"
+"adc_8cpp.html",
+"keypad_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
