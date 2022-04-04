@@ -149,6 +149,10 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:ad8f7e67fb3581ac0228ccc572da21ec3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oled__friendly_8h.html#ad8f7e67fb3581ac0228ccc572da21ec3">oled_friendly_display_one_line</a> (char *message, const uint8_t *font=<a class="el" href="oled__friendly_8h.html#a5c7fe6989ead3a5e9adcac39717eb69f">FONT_MEDIUM</a>)</td></tr>
 <tr class="separator:ad8f7e67fb3581ac0228ccc572da21ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39507620e392ba14bf3f9b92014994c1"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oled__friendly_8h.html#a39507620e392ba14bf3f9b92014994c1">get_font_height</a> (const uint8_t *font)</td></tr>
+<tr class="separator:a39507620e392ba14bf3f9b92014994c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d4e3bd00f791fb30ef34405331fff5e"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oled__friendly_8h.html#a2d4e3bd00f791fb30ef34405331fff5e">get_font_offset</a> (const uint8_t *font)</td></tr>
+<tr class="separator:a2d4e3bd00f791fb30ef34405331fff5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="adb97ddaa53ea8abb0bf6e07ef53023a0"></a>
@@ -536,6 +540,48 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a39507620e392ba14bf3f9b92014994c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39507620e392ba14bf3f9b92014994c1">&#9670;&nbsp;</a></span>get_font_height()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int8_t get_font_height </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>font</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the maximum height of any glyph in the font. </p>
+
+<p class="definition">Definition at line <a class="el" href="oled__friendly_8cpp_source.html#l00007">7</a> of file <a class="el" href="oled__friendly_8cpp_source.html">oled_friendly.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2d4e3bd00f791fb30ef34405331fff5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d4e3bd00f791fb30ef34405331fff5e">&#9670;&nbsp;</a></span>get_font_offset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int8_t get_font_offset </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>font</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the maximum height of any glyph of the font above the baseline. </p>
+
+<p class="definition">Definition at line <a class="el" href="oled__friendly_8cpp_source.html#l00029">29</a> of file <a class="el" href="oled__friendly_8cpp_source.html">oled_friendly.cpp</a>.</p>
+
+</div>
+</div>
 <a id="ad8f7e67fb3581ac0228ccc572da21ec3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad8f7e67fb3581ac0228ccc572da21ec3">&#9670;&nbsp;</a></span>oled_friendly_display_one_line()</h2>
 
@@ -569,7 +615,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="oled__friendly_8cpp_source.html#l00056">56</a> of file <a class="el" href="oled__friendly_8cpp_source.html">oled_friendly.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oled__friendly_8cpp_source.html#l00058">58</a> of file <a class="el" href="oled__friendly_8cpp_source.html">oled_friendly.cpp</a>.</p>
 
 </div>
 </div>
