@@ -1,6 +1,8 @@
 #include "oled_friendly.h"
 #include <cstdint>
  
+#define SCREEN_WIDTH_TILES 32
+#define SCREEN_HEIGHT_TILES 8
 
 int8_t get_font_height(const uint8_t * font) {
 	if (font == FONT_TINY) {
@@ -50,7 +52,7 @@ uint8_t previous_tile_width = 0;
 uint8_t previous_tile_height = 0;
 
 void oled_update_rot2_area(uint8_t tx, uint8_t ty, uint8_t tw, uint8_t th) {
-    u8g2_UpdateDisplayArea(&oled, 32 - (tx + tw), 8 - (ty + th), tw, th);
+    u8g2_UpdateDisplayArea(&oled, SCREEN_WIDTH_TILES - (tx + tw), SCREEN_HEIGHT_TILES - (ty + th), tw, th);
 }
 
 void oled_friendly_display_one_line(char * message, const uint8_t * font) {

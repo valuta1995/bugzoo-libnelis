@@ -45,4 +45,15 @@
  */
 void oled_friendly_display_one_line(char * message, const uint8_t * font=FONT_MEDIUM);
 
+/**
+ * Get the maximum height of any glyph in the font.
+ */
+int8_t get_font_height(const uint8_t * font);
+
+/**
+ * Get the maximum height of any glyph of the font above the baseline.
+ */
+int8_t get_font_offset(const uint8_t * font);
+
+
 #endif
