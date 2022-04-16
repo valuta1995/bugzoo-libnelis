@@ -2,6 +2,7 @@ var keypad_8cpp =
 [
     [ "COL_WRITE_MASK", "keypad_8cpp.html#a9a3bc9a871520a534e3a6323be12f311", null ],
     [ "ROW_READ_MASK", "keypad_8cpp.html#a209575f27b2b36116112b996972ec1fb", null ],
+    [ "keypad_clear_keys", "keypad_8cpp.html#a110e31aa2c495484eb697a5d7f715800", null ],
     [ "keypad_get_char", "keypad_8cpp.html#a65840c4dde6dc20693d954b9be978309", null ],
     [ "keypad_get_int", "keypad_8cpp.html#a60b56525208d99e5d36cb7dce38c2215", null ],
     [ "keypad_get_key", "keypad_8cpp.html#a6910dab86cc38d45c7df9ebb0b0efa03", null ],

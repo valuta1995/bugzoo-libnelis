@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['u8x8_5fbyte_5fk66f_5f3wire_5fhw_5fspi_446',['u8x8_byte_k66f_3wire_hw_spi',['../u8g2__mbed__k66f_8cpp.html#ad7ee826d0dcd1a287ed0d984a25cf042',1,'u8x8_byte_k66f_3wire_hw_spi(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr):&#160;u8g2_mbed_k66f.cpp'],['../u8g2__mbed__k66f_8h.html#ad7ee826d0dcd1a287ed0d984a25cf042',1,'u8x8_byte_k66f_3wire_hw_spi(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr):&#160;u8g2_mbed_k66f.cpp']]],
-  ['u8x8_5fgpio_5fand_5fdelay_5fmbed_447',['u8x8_gpio_and_delay_mbed',['../u8g2__mbed__k66f_8cpp.html#aa752ca2ae5ec6868dceff30fd71531c1',1,'u8x8_gpio_and_delay_mbed(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr):&#160;u8g2_mbed_k66f.cpp'],['../u8g2__mbed__k66f_8h.html#aa752ca2ae5ec6868dceff30fd71531c1',1,'u8x8_gpio_and_delay_mbed(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr):&#160;u8g2_mbed_k66f.cpp']]]
+  ['spi0_481',['spi0',['../board__freedom_8cpp.html#a86b720ec97e7f1ae166b5dde75da20b0',1,'board_freedom.cpp']]],
+  ['spi1_482',['spi1',['../board__freedom_8cpp.html#a96fb7f1edfa078294b64dc0098b524e6',1,'board_freedom.cpp']]],
+  ['system_5fset_5fvref_5fvoltage_483',['system_set_vref_voltage',['../board__freedom_8cpp.html#a757d8e2d48f189258871b891b52dd7e9',1,'system_set_vref_voltage(float vref):&#160;board_freedom.cpp'],['../board__freedom_8h.html#a757d8e2d48f189258871b891b52dd7e9',1,'system_set_vref_voltage(float vref):&#160;board_freedom.cpp']]]
 ];

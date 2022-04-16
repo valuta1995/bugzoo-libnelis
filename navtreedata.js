@@ -40,6 +40,7 @@ var NAVTREE =
         [ "All", "globals.html", "globals_dup" ],
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
+        [ "Typedefs", "globals_type.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -49,7 +50,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "adc_8cpp.html",
-"keypad_8h.html"
+"keypad_8h.html",
+"vukip-logo_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

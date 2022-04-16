@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['i2c_481',['i2c',['../board__freedom_8h.html#ab9cf2effe918123b16770bde742009ee',1,'board_freedom.h']]],
-  ['i2c0_482',['i2c0',['../board__freedom_8h.html#af4e33e989dc4df87f46120c5303e0d4f',1,'board_freedom.h']]],
-  ['i2c_5fbuff_5fnen_483',['i2c_buff_nen',['../board__freedom_8h.html#a1a2fde300507b48f78dc36784a7259bc',1,'board_freedom.h']]],
-  ['idfk_5fflag_484',['idfk_flag',['../keypad_8cpp.html#ad8c43f4b6b2298b376f92f058237ed98',1,'keypad.cpp']]]
+  ['fall_5fcount_515',['fall_count',['../keypad_8cpp.html#a3f2270b048cd552322a2ae0eb91472ce',1,'keypad.cpp']]],
+  ['fallen_516',['fallen',['../keypad_8cpp.html#a583eb3f220ff71548f8f0a8b4ca7afeb',1,'keypad.cpp']]],
+  ['function_517',['function',['../structmenu__t.html#a36868ce0e8603fa232643bbb9d19da61',1,'menu_t']]]
 ];

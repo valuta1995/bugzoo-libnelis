@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['spi0_511',['spi0',['../board__freedom_8h.html#a4fecb0371e2babcf58c6bef6f8c2dfb6',1,'board_freedom.h']]],
-  ['spi1_512',['spi1',['../board__freedom_8h.html#a677742ef7a522910fc7e35bf43fba97b',1,'board_freedom.h']]],
-  ['system_5fvref_5fvoltage_513',['system_vref_voltage',['../board__freedom_8cpp.html#afb7b78e18d073c7194b0e1a7aacd2937',1,'system_vref_voltage():&#160;board_freedom.cpp'],['../board__freedom_8h.html#afb7b78e18d073c7194b0e1a7aacd2937',1,'system_vref_voltage():&#160;board_freedom.cpp']]]
+  ['previous_5ftile_5fheight_542',['previous_tile_height',['../oled__friendly_8cpp.html#ae4318236909da0cebfa0567c97894a64',1,'oled_friendly.cpp']]],
+  ['previous_5ftile_5fwidth_543',['previous_tile_width',['../oled__friendly_8cpp.html#ae1b47f6e314e3370efcc9a2f678d9111',1,'oled_friendly.cpp']]],
+  ['pwm0_544',['pwm0',['../board__freedom_8h.html#a3977c0bce66e988fc44d0e336d1ae33b',1,'board_freedom.h']]],
+  ['pwm1_545',['pwm1',['../board__freedom_8h.html#a323fa0d45dd60b34b4563b3d0d21f971',1,'board_freedom.h']]],
+  ['pwm2_546',['pwm2',['../board__freedom_8h.html#ae9774820a29650948dd03a83a16b8f33',1,'board_freedom.h']]],
+  ['pwm3_547',['pwm3',['../board__freedom_8h.html#abf7db26aecd9bbbb5a6b11b1c1a3e2cf',1,'board_freedom.h']]]
 ];

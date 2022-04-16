@@ -1,18 +1,12 @@
 var searchData=
 [
-  ['keyboard_5fevent_5ft_117',['keyboard_event_t',['../structkeyboard__event__t.html',1,'']]],
-  ['keypad_2ecpp_118',['keypad.cpp',['../keypad_8cpp.html',1,'']]],
-  ['keypad_2eh_119',['keypad.h',['../keypad_8h.html',1,'']]],
-  ['keypad_5fget_5fchar_120',['keypad_get_char',['../keypad_8cpp.html#a65840c4dde6dc20693d954b9be978309',1,'keypad_get_char():&#160;keypad.cpp'],['../keypad_8h.html#a65840c4dde6dc20693d954b9be978309',1,'keypad_get_char():&#160;keypad.cpp']]],
-  ['keypad_5fget_5fint_121',['keypad_get_int',['../keypad_8cpp.html#a60b56525208d99e5d36cb7dce38c2215',1,'keypad_get_int():&#160;keypad.cpp'],['../keypad_8h.html#a60b56525208d99e5d36cb7dce38c2215',1,'keypad_get_int():&#160;keypad.cpp']]],
-  ['keypad_5fget_5fkey_122',['keypad_get_key',['../keypad_8cpp.html#a6910dab86cc38d45c7df9ebb0b0efa03',1,'keypad_get_key():&#160;keypad.cpp'],['../keypad_8h.html#a6910dab86cc38d45c7df9ebb0b0efa03',1,'keypad_get_key():&#160;keypad.cpp']]],
-  ['keypad_5fhas_5fkey_123',['keypad_has_key',['../keypad_8cpp.html#a0a03ff3b3561b54ac338a382805a02f9',1,'keypad_has_key():&#160;keypad.cpp'],['../keypad_8h.html#a0a03ff3b3561b54ac338a382805a02f9',1,'keypad_has_key():&#160;keypad.cpp']]],
-  ['keypad_5finit_124',['keypad_init',['../keypad_8cpp.html#a39c000144753c21ac6d37529de4dbe6e',1,'keypad_init():&#160;keypad.cpp'],['../keypad_8h.html#a39c000144753c21ac6d37529de4dbe6e',1,'keypad_init():&#160;keypad.cpp']]],
-  ['keypad_5flistener_5fmain_125',['keypad_listener_main',['../keypad_8cpp.html#a8388de3132990d23b8b6abce545014ea',1,'keypad.cpp']]],
-  ['keypad_5flistener_5fprocess_5fkeypress_126',['keypad_listener_process_keypress',['../keypad_8cpp.html#afaf068214b54ab90e96af2d09c5ded6f',1,'keypad.cpp']]],
-  ['keypad_5flistener_5fthread_127',['keypad_listener_thread',['../keypad_8cpp.html#ae3f5754face3bee3d38e6cda05a30c00',1,'keypad.cpp']]],
-  ['keypad_5fscan_5frate_5fms_128',['KEYPAD_SCAN_RATE_MS',['../keypad_8h.html#ab1f087d55a733e9724891ecdd2ce08ba',1,'keypad.h']]],
-  ['keypadeventqueue_129',['keypadEventQueue',['../keypad_8cpp.html#a51697d6427382d98dd058a06bd232866',1,'keypadEventQueue():&#160;keypad.cpp'],['../keypad_8h.html#a51697d6427382d98dd058a06bd232866',1,'keypadEventQueue():&#160;keypad.cpp']]],
-  ['keypress_5fbeep_5fenabled_130',['KEYPRESS_BEEP_ENABLED',['../keypad_8h.html#af2c149755fac015bddd7a4ee6c260ecf',1,'keypad.h']]],
-  ['keypress_5fbeep_5flength_5fms_131',['KEYPRESS_BEEP_LENGTH_MS',['../keypad_8h.html#af4c019b8073ff9594a383a5df9c15428',1,'keypad.h']]]
+  ['i2c_109',['i2c',['../board__freedom_8h.html#ab9cf2effe918123b16770bde742009ee',1,'i2c():&#160;board_freedom.h'],['../board__freedom_8cpp.html#a72aa5dd5d4197e816477d88cfffffcaf',1,'i2c(PTC11, PTC10):&#160;board_freedom.cpp']]],
+  ['i2c0_110',['i2c0',['../board__freedom_8h.html#af4e33e989dc4df87f46120c5303e0d4f',1,'i2c0():&#160;board_freedom.h'],['../board__freedom_8cpp.html#a0256767fe5c7f1c12109d622a42c63f5',1,'i2c0(PTD9, PTD8):&#160;board_freedom.cpp']]],
+  ['i2c1_111',['i2c1',['../board__freedom_8h.html#a87659b485d9e76dfc3bcef208ac4b573',1,'board_freedom.h']]],
+  ['i2c_5fbuff_5fnen_112',['i2c_buff_nen',['../board__freedom_8h.html#a1a2fde300507b48f78dc36784a7259bc',1,'i2c_buff_nen():&#160;board_freedom.h'],['../board__freedom_8cpp.html#a310f17b64ce8e84967b2072fc6a33e2f',1,'i2c_buff_nen(PTD12):&#160;board_freedom.cpp']]],
+  ['i2c_5fscan_5flinuxy_113',['i2c_scan_linuxy',['../i2cscan_8cpp.html#a616f37aaf81271bc24d9ff9a7bd35fd4',1,'i2c_scan_linuxy(I2C *i2cbus):&#160;i2cscan.cpp'],['../i2cscan_8h.html#a616f37aaf81271bc24d9ff9a7bd35fd4',1,'i2c_scan_linuxy(I2C *i2cbus):&#160;i2cscan.cpp']]],
+  ['i2c_5fscan_5foled_114',['i2c_scan_oled',['../i2cscan_8cpp.html#a45278e006ca4d287cce13a676522e898',1,'i2c_scan_oled(I2C *i2cbus):&#160;i2cscan.cpp'],['../i2cscan_8h.html#a45278e006ca4d287cce13a676522e898',1,'i2c_scan_oled(I2C *i2cbus):&#160;i2cscan.cpp']]],
+  ['i2cscan_2ecpp_115',['i2cscan.cpp',['../i2cscan_8cpp.html',1,'']]],
+  ['i2cscan_2eh_116',['i2cscan.h',['../i2cscan_8h.html',1,'']]],
+  ['idfk_5fflag_117',['idfk_flag',['../keypad_8cpp.html#ad8c43f4b6b2298b376f92f058237ed98',1,'keypad.cpp']]]
 ];

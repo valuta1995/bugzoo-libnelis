@@ -98,9 +98,13 @@ $(document).ready(function(){initNavTree('oled__friendly_8cpp.html',''); initRes
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a1397a5f026e634fded2d97690c8dffe0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oled__friendly_8cpp.html#a1397a5f026e634fded2d97690c8dffe0">SCREEN_WIDTH_TILES</a>&#160;&#160;&#160;32</td></tr>
+<tr class="memitem:a2cd109632a6dcccaa80b43561b1ab700"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oled__friendly_8cpp.html#a2cd109632a6dcccaa80b43561b1ab700">SCREEN_WIDTH</a>&#160;&#160;&#160;256</td></tr>
+<tr class="separator:a2cd109632a6dcccaa80b43561b1ab700"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1397a5f026e634fded2d97690c8dffe0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oled__friendly_8cpp.html#a1397a5f026e634fded2d97690c8dffe0">SCREEN_WIDTH_TILES</a>&#160;&#160;&#160;<a class="el" href="oled__friendly_8cpp.html#a2cd109632a6dcccaa80b43561b1ab700">SCREEN_WIDTH</a> / 8</td></tr>
 <tr class="separator:a1397a5f026e634fded2d97690c8dffe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21902dcce306591034fc0e3fc782309d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oled__friendly_8cpp.html#a21902dcce306591034fc0e3fc782309d">SCREEN_HEIGHT_TILES</a>&#160;&#160;&#160;8</td></tr>
+<tr class="memitem:a6974d08a74da681b3957b2fead2608b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oled__friendly_8cpp.html#a6974d08a74da681b3957b2fead2608b8">SCREEN_HEIGHT</a>&#160;&#160;&#160;64</td></tr>
+<tr class="separator:a6974d08a74da681b3957b2fead2608b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21902dcce306591034fc0e3fc782309d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oled__friendly_8cpp.html#a21902dcce306591034fc0e3fc782309d">SCREEN_HEIGHT_TILES</a>&#160;&#160;&#160;<a class="el" href="oled__friendly_8cpp.html#a6974d08a74da681b3957b2fead2608b8">SCREEN_HEIGHT</a> / 8</td></tr>
 <tr class="separator:a21902dcce306591034fc0e3fc782309d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -109,10 +113,12 @@ Functions</h2></td></tr>
 <tr class="separator:a39507620e392ba14bf3f9b92014994c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d4e3bd00f791fb30ef34405331fff5e"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oled__friendly_8cpp.html#a2d4e3bd00f791fb30ef34405331fff5e">get_font_offset</a> (const uint8_t *font)</td></tr>
 <tr class="separator:a2d4e3bd00f791fb30ef34405331fff5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a00fe7bcb255ec1744c477e1f557ea8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oled__friendly_8cpp.html#a9a00fe7bcb255ec1744c477e1f557ea8">oled_update_rot2_area</a> (uint8_t tx, uint8_t ty, uint8_t tw, uint8_t th)</td></tr>
-<tr class="separator:a9a00fe7bcb255ec1744c477e1f557ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad350127260efde3ea975d0557930394a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oled__friendly_8cpp.html#ad350127260efde3ea975d0557930394a">oled_friendly_display_one_line</a> (char *message, const uint8_t *font)</td></tr>
-<tr class="separator:ad350127260efde3ea975d0557930394a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99fdd3fb39ad12cece5a4aeae5c00794"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oled__friendly_8cpp.html#a99fdd3fb39ad12cece5a4aeae5c00794">oled_friendly_update_rot2_area</a> (uint16_t x, uint16_t y, uint16_t w, uint16_t h)</td></tr>
+<tr class="separator:a99fdd3fb39ad12cece5a4aeae5c00794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00f14b82c4e1c534839abe67f3582361"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oled__friendly_8cpp.html#a00f14b82c4e1c534839abe67f3582361">oled_friendly_display_one_line</a> (const char *message, const uint8_t *font)</td></tr>
+<tr class="separator:a00f14b82c4e1c534839abe67f3582361"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d0e3a3531e9c067ca2a843d4ed733b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oled__friendly_8cpp.html#a2d0e3a3531e9c067ca2a843d4ed733b9">oled_friendly_splash</a> (const char *message, const uint8_t *font)</td></tr>
+<tr class="separator:a2d0e3a3531e9c067ca2a843d4ed733b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -122,6 +128,22 @@ Variables</h2></td></tr>
 <tr class="separator:ae4318236909da0cebfa0567c97894a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a6974d08a74da681b3957b2fead2608b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6974d08a74da681b3957b2fead2608b8">&#9670;&nbsp;</a></span>SCREEN_HEIGHT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCREEN_HEIGHT&#160;&#160;&#160;64</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="oled__friendly_8cpp_source.html#l00007">7</a> of file <a class="el" href="oled__friendly_8cpp_source.html">oled_friendly.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a21902dcce306591034fc0e3fc782309d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a21902dcce306591034fc0e3fc782309d">&#9670;&nbsp;</a></span>SCREEN_HEIGHT_TILES</h2>
 
@@ -129,12 +151,28 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define SCREEN_HEIGHT_TILES&#160;&#160;&#160;8</td>
+          <td class="memname">#define SCREEN_HEIGHT_TILES&#160;&#160;&#160;<a class="el" href="oled__friendly_8cpp.html#a6974d08a74da681b3957b2fead2608b8">SCREEN_HEIGHT</a> / 8</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oled__friendly_8cpp_source.html#l00005">5</a> of file <a class="el" href="oled__friendly_8cpp_source.html">oled_friendly.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oled__friendly_8cpp_source.html#l00008">8</a> of file <a class="el" href="oled__friendly_8cpp_source.html">oled_friendly.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2cd109632a6dcccaa80b43561b1ab700"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cd109632a6dcccaa80b43561b1ab700">&#9670;&nbsp;</a></span>SCREEN_WIDTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCREEN_WIDTH&#160;&#160;&#160;256</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="oled__friendly_8cpp_source.html#l00004">4</a> of file <a class="el" href="oled__friendly_8cpp_source.html">oled_friendly.cpp</a>.</p>
 
 </div>
 </div>
@@ -145,12 +183,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define SCREEN_WIDTH_TILES&#160;&#160;&#160;32</td>
+          <td class="memname">#define SCREEN_WIDTH_TILES&#160;&#160;&#160;<a class="el" href="oled__friendly_8cpp.html#a2cd109632a6dcccaa80b43561b1ab700">SCREEN_WIDTH</a> / 8</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oled__friendly_8cpp_source.html#l00004">4</a> of file <a class="el" href="oled__friendly_8cpp_source.html">oled_friendly.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oled__friendly_8cpp_source.html#l00005">5</a> of file <a class="el" href="oled__friendly_8cpp_source.html">oled_friendly.cpp</a>.</p>
 
 </div>
 </div>
@@ -172,7 +210,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Get the maximum height of any glyph in the font. </p>
 
-<p class="definition">Definition at line <a class="el" href="oled__friendly_8cpp_source.html#l00007">7</a> of file <a class="el" href="oled__friendly_8cpp_source.html">oled_friendly.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oled__friendly_8cpp_source.html#l00010">10</a> of file <a class="el" href="oled__friendly_8cpp_source.html">oled_friendly.cpp</a>.</p>
 
 </div>
 </div>
@@ -193,12 +231,12 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Get the maximum height of any glyph of the font above the baseline. </p>
 
-<p class="definition">Definition at line <a class="el" href="oled__friendly_8cpp_source.html#l00029">29</a> of file <a class="el" href="oled__friendly_8cpp_source.html">oled_friendly.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oled__friendly_8cpp_source.html#l00032">32</a> of file <a class="el" href="oled__friendly_8cpp_source.html">oled_friendly.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ad350127260efde3ea975d0557930394a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad350127260efde3ea975d0557930394a">&#9670;&nbsp;</a></span>oled_friendly_display_one_line()</h2>
+<a id="a00f14b82c4e1c534839abe67f3582361"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00f14b82c4e1c534839abe67f3582361">&#9670;&nbsp;</a></span>oled_friendly_display_one_line()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -206,7 +244,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void oled_friendly_display_one_line </td>
           <td>(</td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>message</em>, </td>
         </tr>
         <tr>
@@ -230,39 +268,76 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="oled__friendly_8cpp_source.html#l00058">58</a> of file <a class="el" href="oled__friendly_8cpp_source.html">oled_friendly.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oled__friendly_8cpp_source.html#l00078">78</a> of file <a class="el" href="oled__friendly_8cpp_source.html">oled_friendly.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a9a00fe7bcb255ec1744c477e1f557ea8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a00fe7bcb255ec1744c477e1f557ea8">&#9670;&nbsp;</a></span>oled_update_rot2_area()</h2>
+<a id="a2d0e3a3531e9c067ca2a843d4ed733b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d0e3a3531e9c067ca2a843d4ed733b9">&#9670;&nbsp;</a></span>oled_friendly_splash()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oled_update_rot2_area </td>
+          <td class="memname">void oled_friendly_splash </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>tx</em>, </td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>ty</em>, </td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>font</em> = <code><a class="el" href="oled__friendly_8h.html#adb97ddaa53ea8abb0bf6e07ef53023a0">FONT_LARGE</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Displays a single line message to the middle of the oled display. The message looks like a pop up. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>A c string containing the message (null terminated). </td></tr>
+    <tr><td class="paramname">font</td><td>The font to be used. Should be one of the fonts listed in this header file. Defaults to Large. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="oled__friendly_8cpp_source.html#l00111">111</a> of file <a class="el" href="oled__friendly_8cpp_source.html">oled_friendly.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a99fdd3fb39ad12cece5a4aeae5c00794"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99fdd3fb39ad12cece5a4aeae5c00794">&#9670;&nbsp;</a></span>oled_friendly_update_rot2_area()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oled_friendly_update_rot2_area </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>tw</em>, </td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>th</em>&#160;</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>h</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -272,7 +347,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oled__friendly_8cpp_source.html#l00054">54</a> of file <a class="el" href="oled__friendly_8cpp_source.html">oled_friendly.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oled__friendly_8cpp_source.html#l00057">57</a> of file <a class="el" href="oled__friendly_8cpp_source.html">oled_friendly.cpp</a>.</p>
 
 </div>
 </div>
@@ -289,7 +364,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oled__friendly_8cpp_source.html#l00052">52</a> of file <a class="el" href="oled__friendly_8cpp_source.html">oled_friendly.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oled__friendly_8cpp_source.html#l00055">55</a> of file <a class="el" href="oled__friendly_8cpp_source.html">oled_friendly.cpp</a>.</p>
 
 </div>
 </div>
@@ -305,7 +380,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oled__friendly_8cpp_source.html#l00051">51</a> of file <a class="el" href="oled__friendly_8cpp_source.html">oled_friendly.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oled__friendly_8cpp_source.html#l00054">54</a> of file <a class="el" href="oled__friendly_8cpp_source.html">oled_friendly.cpp</a>.</p>
 
 </div>
 </div>

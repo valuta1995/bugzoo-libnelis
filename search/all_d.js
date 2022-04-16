@@ -1,9 +1,17 @@
 var searchData=
 [
-  ['previous_5ftile_5fheight_302',['previous_tile_height',['../oled__friendly_8cpp.html#ae4318236909da0cebfa0567c97894a64',1,'oled_friendly.cpp']]],
-  ['previous_5ftile_5fwidth_303',['previous_tile_width',['../oled__friendly_8cpp.html#ae1b47f6e314e3370efcc9a2f678d9111',1,'oled_friendly.cpp']]],
-  ['pwm0_304',['pwm0',['../board__freedom_8h.html#a3977c0bce66e988fc44d0e336d1ae33b',1,'pwm0():&#160;board_freedom.h'],['../board__freedom_8cpp.html#a19eec2d6aecddca12e9f25cbe0ec6fc1',1,'pwm0(PTC2):&#160;board_freedom.cpp']]],
-  ['pwm1_305',['pwm1',['../board__freedom_8h.html#a323fa0d45dd60b34b4563b3d0d21f971',1,'pwm1():&#160;board_freedom.h'],['../board__freedom_8cpp.html#a72d7800e8f4caaecfdb59297af1a1c04',1,'pwm1(PTC5):&#160;board_freedom.cpp']]],
-  ['pwm2_306',['pwm2',['../board__freedom_8h.html#ae9774820a29650948dd03a83a16b8f33',1,'pwm2():&#160;board_freedom.h'],['../board__freedom_8cpp.html#a407aeb726978c5c8a03f13aeee9af5fd',1,'pwm2(PTA6):&#160;board_freedom.cpp']]],
-  ['pwm3_307',['pwm3',['../board__freedom_8h.html#abf7db26aecd9bbbb5a6b11b1c1a3e2cf',1,'pwm3():&#160;board_freedom.h'],['../board__freedom_8cpp.html#a92aba2a1884794feafe33f1bd4bd1d5e',1,'pwm3(PTA7):&#160;board_freedom.cpp']]]
+  ['oled_308',['oled',['../oled__ssd1322_8cpp.html#a758db5fed190da60e5bc81ebd40f31c5',1,'oled():&#160;oled_ssd1322.cpp'],['../oled__ssd1322_8h.html#a758db5fed190da60e5bc81ebd40f31c5',1,'oled():&#160;oled_ssd1322.cpp']]],
+  ['oled_5fcs_309',['oled_cs',['../board__freedom_8h.html#a849d31ca69a4b0fafbc678460fee331a',1,'oled_cs():&#160;board_freedom.h'],['../board__freedom_8cpp.html#a9c39a2504f153fd64c89ac9bbc09c9dc',1,'oled_cs(PTC0):&#160;board_freedom.cpp']]],
+  ['oled_5ffriendly_2ecpp_310',['oled_friendly.cpp',['../oled__friendly_8cpp.html',1,'']]],
+  ['oled_5ffriendly_2eh_311',['oled_friendly.h',['../oled__friendly_8h.html',1,'']]],
+  ['oled_5ffriendly_5fdisplay_5fone_5fline_312',['oled_friendly_display_one_line',['../oled__friendly_8cpp.html#a00f14b82c4e1c534839abe67f3582361',1,'oled_friendly_display_one_line(const char *message, const uint8_t *font):&#160;oled_friendly.cpp'],['../oled__friendly_8h.html#a6a462c53ff0c8384d586676d9bed768e',1,'oled_friendly_display_one_line(const char *message, const uint8_t *font=FONT_MEDIUM):&#160;oled_friendly.cpp']]],
+  ['oled_5ffriendly_5fsplash_313',['oled_friendly_splash',['../oled__friendly_8cpp.html#a2d0e3a3531e9c067ca2a843d4ed733b9',1,'oled_friendly_splash(const char *message, const uint8_t *font):&#160;oled_friendly.cpp'],['../oled__friendly_8h.html#af5251ece4672b417f692b23541a4815f',1,'oled_friendly_splash(const char *message, const uint8_t *font=FONT_LARGE):&#160;oled_friendly.cpp']]],
+  ['oled_5ffriendly_5fupdate_5frot2_5farea_314',['oled_friendly_update_rot2_area',['../oled__friendly_8cpp.html#a99fdd3fb39ad12cece5a4aeae5c00794',1,'oled_friendly.cpp']]],
+  ['oled_5finit_315',['oled_init',['../oled__ssd1322_8cpp.html#a8c50659733df2acac1580d209db8e97f',1,'oled_init():&#160;oled_ssd1322.cpp'],['../oled__ssd1322_8h.html#ad95f850c4c6d949229270c8da88c02cb',1,'oled_init(void):&#160;oled_ssd1322.cpp']]],
+  ['oled_5fspi_316',['oled_spi',['../board__freedom_8h.html#a907b2aa0586246170dc0baefacfdf609',1,'board_freedom.h']]],
+  ['oled_5fsplash_317',['oled_splash',['../oled__ssd1322_8cpp.html#a395cf80d3e3ffd345246d10ef096ac5e',1,'oled_splash(void):&#160;oled_ssd1322.cpp'],['../oled__ssd1322_8h.html#a395cf80d3e3ffd345246d10ef096ac5e',1,'oled_splash(void):&#160;oled_ssd1322.cpp']]],
+  ['oled_5fssd1322_2ecpp_318',['oled_ssd1322.cpp',['../oled__ssd1322_8cpp.html',1,'']]],
+  ['oled_5fssd1322_2eh_319',['oled_ssd1322.h',['../oled__ssd1322_8h.html',1,'']]],
+  ['onfall_320',['onFall',['../keypad_8cpp.html#a9417f4b08bdae9ef00430f101edbb819',1,'keypad.cpp']]],
+  ['onrise_321',['onRise',['../keypad_8cpp.html#a91d302b357a977a7208b2c5d5b0b0fe7',1,'keypad.cpp']]]
 ];

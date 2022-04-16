@@ -1,8 +1,13 @@
 var searchData=
 [
-  ['u8g2_5fmbed_5fk66f_2ecpp_320',['u8g2_mbed_k66f.cpp',['../u8g2__mbed__k66f_8cpp.html',1,'']]],
-  ['u8g2_5fmbed_5fk66f_2eh_321',['u8g2_mbed_k66f.h',['../u8g2__mbed__k66f_8h.html',1,'']]],
-  ['u8x8_5fbyte_5fk66f_5f3wire_5fhw_5fspi_322',['u8x8_byte_k66f_3wire_hw_spi',['../u8g2__mbed__k66f_8cpp.html#ad7ee826d0dcd1a287ed0d984a25cf042',1,'u8x8_byte_k66f_3wire_hw_spi(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr):&#160;u8g2_mbed_k66f.cpp'],['../u8g2__mbed__k66f_8h.html#ad7ee826d0dcd1a287ed0d984a25cf042',1,'u8x8_byte_k66f_3wire_hw_spi(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr):&#160;u8g2_mbed_k66f.cpp']]],
-  ['u8x8_5fgpio_5fand_5fdelay_5fmbed_323',['u8x8_gpio_and_delay_mbed',['../u8g2__mbed__k66f_8cpp.html#aa752ca2ae5ec6868dceff30fd71531c1',1,'u8x8_gpio_and_delay_mbed(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr):&#160;u8g2_mbed_k66f.cpp'],['../u8g2__mbed__k66f_8h.html#aa752ca2ae5ec6868dceff30fd71531c1',1,'u8x8_gpio_and_delay_mbed(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr):&#160;u8g2_mbed_k66f.cpp']]],
-  ['up_5fkey_324',['UP_KEY',['../keypad_8h.html#a1c34fc6f48366ae6334736730fd9b0e7',1,'keypad.h']]]
+  ['screen_5fheight_333',['SCREEN_HEIGHT',['../oled__friendly_8cpp.html#a6974d08a74da681b3957b2fead2608b8',1,'oled_friendly.cpp']]],
+  ['screen_5fheight_5ftiles_334',['SCREEN_HEIGHT_TILES',['../oled__friendly_8cpp.html#a21902dcce306591034fc0e3fc782309d',1,'oled_friendly.cpp']]],
+  ['screen_5fwidth_335',['SCREEN_WIDTH',['../oled__friendly_8cpp.html#a2cd109632a6dcccaa80b43561b1ab700',1,'oled_friendly.cpp']]],
+  ['screen_5fwidth_5ftiles_336',['SCREEN_WIDTH_TILES',['../oled__friendly_8cpp.html#a1397a5f026e634fded2d97690c8dffe0',1,'oled_friendly.cpp']]],
+  ['spi0_337',['spi0',['../board__freedom_8h.html#a4fecb0371e2babcf58c6bef6f8c2dfb6',1,'spi0():&#160;board_freedom.h'],['../board__freedom_8cpp.html#a86b720ec97e7f1ae166b5dde75da20b0',1,'spi0(PTD2, NC, PTD1):&#160;board_freedom.cpp']]],
+  ['spi1_338',['spi1',['../board__freedom_8h.html#a677742ef7a522910fc7e35bf43fba97b',1,'spi1():&#160;board_freedom.h'],['../board__freedom_8cpp.html#a96fb7f1edfa078294b64dc0098b524e6',1,'spi1(PTD6, PTD7, PTD5):&#160;board_freedom.cpp']]],
+  ['sub_5fmenus_339',['sub_menus',['../structmenu__t.html#a96502e316226e44d648f995f3950dc02',1,'menu_t']]],
+  ['system_5fset_5fvref_5fvoltage_340',['system_set_vref_voltage',['../board__freedom_8cpp.html#a757d8e2d48f189258871b891b52dd7e9',1,'system_set_vref_voltage(float vref):&#160;board_freedom.cpp'],['../board__freedom_8h.html#a757d8e2d48f189258871b891b52dd7e9',1,'system_set_vref_voltage(float vref):&#160;board_freedom.cpp']]],
+  ['system_5fvref_5fvoltage_341',['system_vref_voltage',['../board__freedom_8cpp.html#afb7b78e18d073c7194b0e1a7aacd2937',1,'system_vref_voltage():&#160;board_freedom.cpp'],['../board__freedom_8h.html#afb7b78e18d073c7194b0e1a7aacd2937',1,'system_vref_voltage():&#160;board_freedom.cpp']]],
+  ['system_5fvref_5fvoltage_5fdefault_342',['SYSTEM_VREF_VOLTAGE_DEFAULT',['../board__freedom_8h.html#a28129d48636d3bddd72fb9e847ec8c83',1,'board_freedom.h']]]
 ];

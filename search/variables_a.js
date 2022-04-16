@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['raw_508',['raw',['../structkeyboard__event__t.html#af31585c38a574199be43d3bfd4b962b5',1,'keyboard_event_t']]],
-  ['rise_5fcount_509',['rise_count',['../keypad_8cpp.html#ae28912d31cdde2a32791144eec7dbaf9',1,'keypad.cpp']]],
-  ['risen_510',['risen',['../keypad_8cpp.html#af37df816ded5aac3ceadc394e7cdcb24',1,'keypad.cpp']]]
+  ['oled_540',['oled',['../oled__ssd1322_8cpp.html#a758db5fed190da60e5bc81ebd40f31c5',1,'oled():&#160;oled_ssd1322.cpp'],['../oled__ssd1322_8h.html#a758db5fed190da60e5bc81ebd40f31c5',1,'oled():&#160;oled_ssd1322.cpp']]],
+  ['oled_5fcs_541',['oled_cs',['../board__freedom_8h.html#a849d31ca69a4b0fafbc678460fee331a',1,'board_freedom.h']]]
 ];

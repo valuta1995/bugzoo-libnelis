@@ -20,6 +20,7 @@ var keypad_8h =
     [ "NUM_8_KEY", "keypad_8h.html#a6eb1ce60b4377629beb1d04a4fdb0272", null ],
     [ "NUM_9_KEY", "keypad_8h.html#a0c8378d0aed381ea02ad7e38c7e1bf72", null ],
     [ "UP_KEY", "keypad_8h.html#a1c34fc6f48366ae6334736730fd9b0e7", null ],
+    [ "keypad_clear_keys", "keypad_8h.html#a110e31aa2c495484eb697a5d7f715800", null ],
     [ "keypad_get_char", "keypad_8h.html#a65840c4dde6dc20693d954b9be978309", null ],
     [ "keypad_get_int", "keypad_8h.html#a60b56525208d99e5d36cb7dce38c2215", null ],
     [ "keypad_get_key", "keypad_8h.html#a6910dab86cc38d45c7df9ebb0b0efa03", null ],

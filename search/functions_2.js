@@ -1,19 +1,16 @@
 var searchData=
 [
-  ['din0_375',['din0',['../board__freedom_8cpp.html#ad4df1e28c40370d6cd3d0721f4115582',1,'board_freedom.cpp']]],
-  ['din1_376',['din1',['../board__freedom_8cpp.html#a496aa84bb31ff0ac86c75a4bc4d67280',1,'board_freedom.cpp']]],
-  ['din2_377',['din2',['../board__freedom_8cpp.html#a89836a7701ee561fedf0609ac630bdd0',1,'board_freedom.cpp']]],
-  ['din3_378',['din3',['../board__freedom_8cpp.html#a5ff0d1684635c0e8c9d6e8fb63a536b4',1,'board_freedom.cpp']]],
-  ['din4_379',['din4',['../board__freedom_8cpp.html#a9a5905eef002a914d00e6d4a43d18e1a',1,'board_freedom.cpp']]],
-  ['din5_380',['din5',['../board__freedom_8cpp.html#aa5c7b3b64c31ee69442c56e976697e55',1,'board_freedom.cpp']]],
-  ['din6_381',['din6',['../board__freedom_8cpp.html#a33d6d48b72214acebb8d32b5316ddc3a',1,'board_freedom.cpp']]],
-  ['din_5fread_382',['din_read',['../board__freedom_8cpp.html#a90a6e9cfb354fa424a93bc1fa276e4a8',1,'din_read():&#160;board_freedom.cpp'],['../board__freedom_8h.html#a90a6e9cfb354fa424a93bc1fa276e4a8',1,'din_read():&#160;board_freedom.cpp']]],
-  ['dout0_383',['dout0',['../board__freedom_8cpp.html#af604247d3a1afbf48628214cf76429f2',1,'board_freedom.cpp']]],
-  ['dout1_384',['dout1',['../board__freedom_8cpp.html#a376cc2407afd357986f63f7370b91291',1,'board_freedom.cpp']]],
-  ['dout2_385',['dout2',['../board__freedom_8cpp.html#ac81f8b830d161ec7e3ea928ea388c191',1,'board_freedom.cpp']]],
-  ['dout3_386',['dout3',['../board__freedom_8cpp.html#a60b8d0148ddf96733f86528813de6824',1,'board_freedom.cpp']]],
-  ['dout4_387',['dout4',['../board__freedom_8cpp.html#a41d0b5bbcab627e06218cb28cd694a77',1,'board_freedom.cpp']]],
-  ['dout5_388',['dout5',['../board__freedom_8cpp.html#a8c895c04e85b88ba430714d040bb3682',1,'board_freedom.cpp']]],
-  ['dout6_389',['dout6',['../board__freedom_8cpp.html#ad42bebd843643fcfdfa9e7f84cd2d187',1,'board_freedom.cpp']]],
-  ['dout_5fwrite_390',['dout_write',['../board__freedom_8cpp.html#a59b1d7728ac7e85c7bfd9fdf0b2d039b',1,'dout_write(uint8_t data):&#160;board_freedom.cpp'],['../board__freedom_8h.html#a59b1d7728ac7e85c7bfd9fdf0b2d039b',1,'dout_write(uint8_t data):&#160;board_freedom.cpp']]]
+  ['board_5finit_390',['board_init',['../board__freedom_8cpp.html#ad7d81512b0ce3a7214547801a3e41264',1,'board_init():&#160;board_freedom.cpp'],['../board__freedom_8h.html#ad7d81512b0ce3a7214547801a3e41264',1,'board_init():&#160;board_freedom.cpp']]],
+  ['board_5fled_5fblue_391',['BOARD_LED_BLUE',['../board__freedom_8cpp.html#a3a0fef641cb8dab4b5774ef3bc2f578e',1,'board_freedom.cpp']]],
+  ['board_5fled_5fgreen_392',['BOARD_LED_GREEN',['../board__freedom_8cpp.html#ab5e6c00284136737a4215263e9f9f9bc',1,'board_freedom.cpp']]],
+  ['board_5fled_5fred_393',['BOARD_LED_RED',['../board__freedom_8cpp.html#a9c503826f7e30fec68af8eb9618c7cae',1,'board_freedom.cpp']]],
+  ['button_5f0_394',['button_0',['../board__freedom_8cpp.html#aabe051aa83faaa83690471b8487e0758',1,'board_freedom.cpp']]],
+  ['button_5f1_395',['button_1',['../board__freedom_8cpp.html#a229c2359193ebacbb095dfabecd11043',1,'board_freedom.cpp']]],
+  ['button_5f2_396',['button_2',['../board__freedom_8cpp.html#a90145b2c5e550a2deaa0201f858d9276',1,'board_freedom.cpp']]],
+  ['button_5f3_397',['button_3',['../board__freedom_8cpp.html#ab3ac4d2ab4fafd8e20712034002b74b1',1,'board_freedom.cpp']]],
+  ['button_5fget_5fall_398',['button_get_all',['../buttons_8cpp.html#a0d21832c9f3eb3ced185955eb8afb21a',1,'button_get_all():&#160;buttons.cpp'],['../buttons_8h.html#a0d21832c9f3eb3ced185955eb8afb21a',1,'button_get_all():&#160;buttons.cpp']]],
+  ['button_5fget_5fstate_399',['button_get_state',['../buttons_8cpp.html#ad7f4a0ba1387cf30d25c49a031aa5fee',1,'button_get_state(uint8_t nr):&#160;buttons.cpp'],['../buttons_8h.html#ad7f4a0ba1387cf30d25c49a031aa5fee',1,'button_get_state(uint8_t nr):&#160;buttons.cpp']]],
+  ['button_5finit_400',['button_init',['../buttons_8cpp.html#a681470fea7c7eaa67094df3e5567a8f7',1,'button_init():&#160;buttons.cpp'],['../buttons_8h.html#a681470fea7c7eaa67094df3e5567a8f7',1,'button_init():&#160;buttons.cpp']]],
+  ['button_5fisr_401',['button_isr',['../buttons_8cpp.html#a949df500c8b749f449e1ae578869c69a',1,'button_isr():&#160;buttons.cpp'],['../buttons_8h.html#a949df500c8b749f449e1ae578869c69a',1,'button_isr():&#160;buttons.cpp']]],
+  ['buzz_402',['buzz',['../board__freedom_8cpp.html#a2488ee25a0fccd1e9fb3a2e606e3d6cd',1,'board_freedom.cpp']]]
 ];

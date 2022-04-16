@@ -161,12 +161,18 @@ $(document).ready(function(){initNavTree('keypad_8h_source.html',''); initResiza
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"> * @return Int representing the number of the last keypress or -1 if the last keypress could not be decoded (or was not a number).</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">int</span> <a class="code" href="keypad_8h.html#a60b56525208d99e5d36cb7dce38c2215">keypad_get_int</a>();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment"> * Delete all keys in the queue.</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">void</span> <a class="code" href="keypad_8h.html#a110e31aa2c495484eb697a5d7f715800">keypad_clear_keys</a>();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="akeypad_8h_html_a51697d6427382d98dd058a06bd232866"><div class="ttname"><a href="keypad_8h.html#a51697d6427382d98dd058a06bd232866">keypadEventQueue</a></div><div class="ttdeci">Queue&lt; keyboard_event_t, 32 &gt; keypadEventQueue</div><div class="ttdef"><b>Definition:</b> <a href="keypad_8cpp_source.html#l00009">keypad.cpp:9</a></div></div>
 <div class="ttc" id="astructkeyboard__event__t_html"><div class="ttname"><a href="structkeyboard__event__t.html">keyboard_event_t</a></div><div class="ttdef"><b>Definition:</b> <a href="keypad_8h_source.html#l00040">keypad.h:40</a></div></div>
+<div class="ttc" id="akeypad_8h_html_a110e31aa2c495484eb697a5d7f715800"><div class="ttname"><a href="keypad_8h.html#a110e31aa2c495484eb697a5d7f715800">keypad_clear_keys</a></div><div class="ttdeci">void keypad_clear_keys()</div><div class="ttdef"><b>Definition:</b> <a href="keypad_8cpp_source.html#l00165">keypad.cpp:165</a></div></div>
 <div class="ttc" id="astructkeyboard__event__t_html_af31585c38a574199be43d3bfd4b962b5"><div class="ttname"><a href="structkeyboard__event__t.html#af31585c38a574199be43d3bfd4b962b5">keyboard_event_t::raw</a></div><div class="ttdeci">uint8_t raw</div><div class="ttdef"><b>Definition:</b> <a href="keypad_8h_source.html#l00041">keypad.h:41</a></div></div>
 <div class="ttc" id="akeypad_8h_html_a65840c4dde6dc20693d954b9be978309"><div class="ttname"><a href="keypad_8h.html#a65840c4dde6dc20693d954b9be978309">keypad_get_char</a></div><div class="ttdeci">char keypad_get_char()</div><div class="ttdef"><b>Definition:</b> <a href="keypad_8cpp_source.html#l00112">keypad.cpp:112</a></div></div>
 <div class="ttc" id="akeypad_8h_html_a6910dab86cc38d45c7df9ebb0b0efa03"><div class="ttname"><a href="keypad_8h.html#a6910dab86cc38d45c7df9ebb0b0efa03">keypad_get_key</a></div><div class="ttdeci">uint8_t keypad_get_key()</div><div class="ttdef"><b>Definition:</b> <a href="keypad_8cpp_source.html#l00102">keypad.cpp:102</a></div></div>

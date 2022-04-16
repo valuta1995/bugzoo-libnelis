@@ -1,10 +1,17 @@
 var searchData=
 [
-  ['oled_5fcs_432',['oled_cs',['../board__freedom_8cpp.html#a9c39a2504f153fd64c89ac9bbc09c9dc',1,'board_freedom.cpp']]],
-  ['oled_5ffriendly_5fdisplay_5fone_5fline_433',['oled_friendly_display_one_line',['../oled__friendly_8cpp.html#ad350127260efde3ea975d0557930394a',1,'oled_friendly_display_one_line(char *message, const uint8_t *font):&#160;oled_friendly.cpp'],['../oled__friendly_8h.html#ad8f7e67fb3581ac0228ccc572da21ec3',1,'oled_friendly_display_one_line(char *message, const uint8_t *font=FONT_MEDIUM):&#160;oled_friendly.cpp']]],
-  ['oled_5finit_434',['oled_init',['../oled__ssd1322_8cpp.html#a8c50659733df2acac1580d209db8e97f',1,'oled_init():&#160;oled_ssd1322.cpp'],['../oled__ssd1322_8h.html#ad95f850c4c6d949229270c8da88c02cb',1,'oled_init(void):&#160;oled_ssd1322.cpp']]],
-  ['oled_5fsplash_435',['oled_splash',['../oled__ssd1322_8cpp.html#a395cf80d3e3ffd345246d10ef096ac5e',1,'oled_splash(void):&#160;oled_ssd1322.cpp'],['../oled__ssd1322_8h.html#a395cf80d3e3ffd345246d10ef096ac5e',1,'oled_splash(void):&#160;oled_ssd1322.cpp']]],
-  ['oled_5fupdate_5frot2_5farea_436',['oled_update_rot2_area',['../oled__friendly_8cpp.html#a9a00fe7bcb255ec1744c477e1f557ea8',1,'oled_friendly.cpp']]],
-  ['onfall_437',['onFall',['../keypad_8cpp.html#a9417f4b08bdae9ef00430f101edbb819',1,'keypad.cpp']]],
-  ['onrise_438',['onRise',['../keypad_8cpp.html#a91d302b357a977a7208b2c5d5b0b0fe7',1,'keypad.cpp']]]
+  ['mcp_455',['mcp',['../board__freedom_8cpp.html#a5015300bb560412485cf723d344e5291',1,'board_freedom.cpp']]],
+  ['mcp4728_5finit_456',['mcp4728_init',['../mcp4728_8cpp.html#a7e07551050a6b96a78f4b987b0372fc3',1,'mcp4728_init():&#160;mcp4728.cpp'],['../mcp4728_8h.html#a7e07551050a6b96a78f4b987b0372fc3',1,'mcp4728_init():&#160;mcp4728.cpp']]],
+  ['mcp4728_5fwrite_457',['mcp4728_write',['../mcp4728_8cpp.html#a6193e5006d8230e50169873f6033749e',1,'mcp4728_write(uint8_t ch, uint16_t val):&#160;mcp4728.cpp'],['../mcp4728_8h.html#a6193e5006d8230e50169873f6033749e',1,'mcp4728_write(uint8_t ch, uint16_t val):&#160;mcp4728.cpp']]],
+  ['mcp4728_5fwrite_5fvoltage_458',['mcp4728_write_voltage',['../mcp4728_8cpp.html#a8d0ce909597d3b9ec157a2e7f26f038d',1,'mcp4728_write_voltage(uint8_t ch, float voltage):&#160;mcp4728.cpp'],['../mcp4728_8h.html#a8d0ce909597d3b9ec157a2e7f26f038d',1,'mcp4728_write_voltage(uint8_t ch, float voltage):&#160;mcp4728.cpp']]],
+  ['mcp_5fint_5fa_459',['mcp_int_a',['../board__freedom_8cpp.html#a69da5f8e4b3dde5ea77b4d3c87b7a1ff',1,'board_freedom.cpp']]],
+  ['mcp_5fint_5fb_460',['mcp_int_b',['../board__freedom_8cpp.html#a183b05b359beb026579e88f5af4a4b73',1,'board_freedom.cpp']]],
+  ['menu_5factivate_5fitem_461',['menu_activate_item',['../menus_8cpp.html#ae26d8deb376e22b044ac7ea38dc14bdb',1,'menu_activate_item(uint8_t id):&#160;menus.cpp'],['../menus_8h.html#ae26d8deb376e22b044ac7ea38dc14bdb',1,'menu_activate_item(uint8_t id):&#160;menus.cpp']]],
+  ['menu_5factivate_5fmenu_462',['menu_activate_menu',['../menus_8cpp.html#a8bb80e767a595f53d1bed680948db033',1,'menu_activate_menu(struct menu_t *new_menu):&#160;menus.cpp'],['../menus_8h.html#a8bb80e767a595f53d1bed680948db033',1,'menu_activate_menu(struct menu_t *new_menu):&#160;menus.cpp']]],
+  ['menu_5fdeactivate_5fmenu_463',['menu_deactivate_menu',['../menus_8cpp.html#a4479b2cf7ba42b209838b4349caac39a',1,'menu_deactivate_menu():&#160;menus.cpp'],['../menus_8h.html#a4479b2cf7ba42b209838b4349caac39a',1,'menu_deactivate_menu():&#160;menus.cpp']]],
+  ['menu_5fdraw_464',['menu_draw',['../menus_8cpp.html#abf4b8cb8c8426a76d32668e9f551d725',1,'menu_draw(struct menu_t *current_menu):&#160;menus.cpp'],['../menus_8h.html#abf4b8cb8c8426a76d32668e9f551d725',1,'menu_draw(struct menu_t *current_menu):&#160;menus.cpp']]],
+  ['menu_5fpop_465',['menu_pop',['../menus_8cpp.html#afcd513cb39672a9475b183bd6bac5329',1,'menu_pop():&#160;menus.cpp'],['../menus_8h.html#afcd513cb39672a9475b183bd6bac5329',1,'menu_pop():&#160;menus.cpp']]],
+  ['menu_5fpush_466',['menu_push',['../menus_8cpp.html#a6931f6f976dcd4f2e677c9de918607ce',1,'menu_push(struct menu_t *new_menu):&#160;menus.cpp'],['../menus_8h.html#a6931f6f976dcd4f2e677c9de918607ce',1,'menu_push(struct menu_t *new_menu):&#160;menus.cpp']]],
+  ['mf_5fdo_5fnothig_467',['mf_do_nothig',['../menus_8cpp.html#a6bedd98d046a5e98164fee7ade39f35a',1,'menus.cpp']]],
+  ['mf_5fserial_5fecho_468',['mf_serial_echo',['../menus_8cpp.html#ae247714d8eea61aa05eccf48920b48f3',1,'menus.cpp']]]
 ];

@@ -1,10 +1,8 @@
 var searchData=
 [
-  ['keypad_5fget_5fchar_413',['keypad_get_char',['../keypad_8cpp.html#a65840c4dde6dc20693d954b9be978309',1,'keypad_get_char():&#160;keypad.cpp'],['../keypad_8h.html#a65840c4dde6dc20693d954b9be978309',1,'keypad_get_char():&#160;keypad.cpp']]],
-  ['keypad_5fget_5fint_414',['keypad_get_int',['../keypad_8cpp.html#a60b56525208d99e5d36cb7dce38c2215',1,'keypad_get_int():&#160;keypad.cpp'],['../keypad_8h.html#a60b56525208d99e5d36cb7dce38c2215',1,'keypad_get_int():&#160;keypad.cpp']]],
-  ['keypad_5fget_5fkey_415',['keypad_get_key',['../keypad_8cpp.html#a6910dab86cc38d45c7df9ebb0b0efa03',1,'keypad_get_key():&#160;keypad.cpp'],['../keypad_8h.html#a6910dab86cc38d45c7df9ebb0b0efa03',1,'keypad_get_key():&#160;keypad.cpp']]],
-  ['keypad_5fhas_5fkey_416',['keypad_has_key',['../keypad_8cpp.html#a0a03ff3b3561b54ac338a382805a02f9',1,'keypad_has_key():&#160;keypad.cpp'],['../keypad_8h.html#a0a03ff3b3561b54ac338a382805a02f9',1,'keypad_has_key():&#160;keypad.cpp']]],
-  ['keypad_5finit_417',['keypad_init',['../keypad_8cpp.html#a39c000144753c21ac6d37529de4dbe6e',1,'keypad_init():&#160;keypad.cpp'],['../keypad_8h.html#a39c000144753c21ac6d37529de4dbe6e',1,'keypad_init():&#160;keypad.cpp']]],
-  ['keypad_5flistener_5fmain_418',['keypad_listener_main',['../keypad_8cpp.html#a8388de3132990d23b8b6abce545014ea',1,'keypad.cpp']]],
-  ['keypad_5flistener_5fprocess_5fkeypress_419',['keypad_listener_process_keypress',['../keypad_8cpp.html#afaf068214b54ab90e96af2d09c5ded6f',1,'keypad.cpp']]]
+  ['i2c_436',['i2c',['../board__freedom_8cpp.html#a72aa5dd5d4197e816477d88cfffffcaf',1,'board_freedom.cpp']]],
+  ['i2c0_437',['i2c0',['../board__freedom_8cpp.html#a0256767fe5c7f1c12109d622a42c63f5',1,'board_freedom.cpp']]],
+  ['i2c_5fbuff_5fnen_438',['i2c_buff_nen',['../board__freedom_8cpp.html#a310f17b64ce8e84967b2072fc6a33e2f',1,'board_freedom.cpp']]],
+  ['i2c_5fscan_5flinuxy_439',['i2c_scan_linuxy',['../i2cscan_8cpp.html#a616f37aaf81271bc24d9ff9a7bd35fd4',1,'i2c_scan_linuxy(I2C *i2cbus):&#160;i2cscan.cpp'],['../i2cscan_8h.html#a616f37aaf81271bc24d9ff9a7bd35fd4',1,'i2c_scan_linuxy(I2C *i2cbus):&#160;i2cscan.cpp']]],
+  ['i2c_5fscan_5foled_440',['i2c_scan_oled',['../i2cscan_8cpp.html#a45278e006ca4d287cce13a676522e898',1,'i2c_scan_oled(I2C *i2cbus):&#160;i2cscan.cpp'],['../i2cscan_8h.html#a45278e006ca4d287cce13a676522e898',1,'i2c_scan_oled(I2C *i2cbus):&#160;i2cscan.cpp']]]
 ];

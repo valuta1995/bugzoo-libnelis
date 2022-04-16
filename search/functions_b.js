@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['spi0_443',['spi0',['../board__freedom_8cpp.html#a86b720ec97e7f1ae166b5dde75da20b0',1,'board_freedom.cpp']]],
-  ['spi1_444',['spi1',['../board__freedom_8cpp.html#a96fb7f1edfa078294b64dc0098b524e6',1,'board_freedom.cpp']]],
-  ['system_5fset_5fvref_5fvoltage_445',['system_set_vref_voltage',['../board__freedom_8cpp.html#a757d8e2d48f189258871b891b52dd7e9',1,'system_set_vref_voltage(float vref):&#160;board_freedom.cpp'],['../board__freedom_8h.html#a757d8e2d48f189258871b891b52dd7e9',1,'system_set_vref_voltage(float vref):&#160;board_freedom.cpp']]]
+  ['pwm0_477',['pwm0',['../board__freedom_8cpp.html#a19eec2d6aecddca12e9f25cbe0ec6fc1',1,'board_freedom.cpp']]],
+  ['pwm1_478',['pwm1',['../board__freedom_8cpp.html#a72d7800e8f4caaecfdb59297af1a1c04',1,'board_freedom.cpp']]],
+  ['pwm2_479',['pwm2',['../board__freedom_8cpp.html#a407aeb726978c5c8a03f13aeee9af5fd',1,'board_freedom.cpp']]],
+  ['pwm3_480',['pwm3',['../board__freedom_8cpp.html#a92aba2a1884794feafe33f1bd4bd1d5e',1,'board_freedom.cpp']]]
 ];
