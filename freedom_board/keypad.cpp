@@ -161,3 +161,8 @@ int keypad_get_int() {
         return -1;
     }
 }
+
+void keypad_clear_keys() {
+    struct keyboard_event_t * e_kbd;
+    while (keypadEventQueue.try_get(&e_kbd));
+}

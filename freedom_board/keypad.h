@@ -73,4 +73,9 @@ char keypad_get_char();
  */
 int keypad_get_int();
 
+/**
+ * Delete all keys in the queue.
+ */
+void keypad_clear_keys();
+
 #endif

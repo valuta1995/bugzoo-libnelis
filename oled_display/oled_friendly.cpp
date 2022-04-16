@@ -1,8 +1,11 @@
 #include "oled_friendly.h"
 #include <cstdint>
- 
-#define SCREEN_WIDTH_TILES 32
-#define SCREEN_HEIGHT_TILES 8
+
+#define SCREEN_WIDTH 256
+#define SCREEN_WIDTH_TILES SCREEN_WIDTH / 8
+
+#define SCREEN_HEIGHT 64
+#define SCREEN_HEIGHT_TILES SCREEN_HEIGHT / 8
 
 int8_t get_font_height(const uint8_t * font) {
 	if (font == FONT_TINY) {
@@ -51,11 +54,28 @@ int8_t get_font_offset(const uint8_t * font) {
 uint8_t previous_tile_width = 0;
 uint8_t previous_tile_height = 0;
 
-void oled_update_rot2_area(uint8_t tx, uint8_t ty, uint8_t tw, uint8_t th) {
-    u8g2_UpdateDisplayArea(&oled, SCREEN_WIDTH_TILES - (tx + tw), SCREEN_HEIGHT_TILES - (ty + th), tw, th);
+void oled_friendly_update_rot2_area(uint16_t x, uint16_t y, uint16_t w, uint16_t h) {
+    uint16_t x_end = x + w;
+    uint16_t y_end = y + h;
+
+    uint16_t x_prime = SCREEN_WIDTH - x_end;
+    uint16_t y_prime = SCREEN_HEIGHT - y_end;
+
+    uint16_t x_prime_end = SCREEN_WIDTH - x;
+    uint16_t y_prime_end = SCREEN_HEIGHT - y;
+
+    uint8_t x_tile = x_prime / 8;
+    uint8_t y_tile = y_prime / 8;
+
+    uint8_t x_tile_end = (x_prime_end + 7) / 8;
+    uint8_t y_tile_end = (y_prime_end + 7) / 8;
+
+    uint8_t w_tile = x_tile_end - x_tile;
+    uint8_t h_tile = y_tile_end - y_tile;
+    u8g2_UpdateDisplayArea(&oled, x_tile, y_tile, w_tile, h_tile);
 }
 
-void oled_friendly_display_one_line(char * message, const uint8_t * font) {
+void oled_friendly_display_one_line(const char * message, const uint8_t * font) {
 
     // Clear the screen
     u8g2_ClearBuffer(&oled);
@@ -70,12 +90,14 @@ void oled_friendly_display_one_line(char * message, const uint8_t * font) {
     // Set the font up
     u8g2_SetFont(&oled, font);
 
+    uint16_t text_width = u8g2_GetStrWidth(&oled, message);
+
     // Calculate the drawn area.
     uint8_t new_tile_height = (height + 7) / 8;
     uint8_t tile_height = previous_tile_height > new_tile_height ? previous_tile_height : new_tile_height;
     previous_tile_height = new_tile_height;
 
-    uint8_t new_tile_width = (u8g2_GetStrWidth(&oled, message) + 7) / 8;
+    uint8_t new_tile_width = (text_width + 7) / 8;
     uint8_t tile_width = previous_tile_width > new_tile_width ? previous_tile_width : new_tile_width;
     previous_tile_width = new_tile_width;
 
@@ -83,5 +105,41 @@ void oled_friendly_display_one_line(char * message, const uint8_t * font) {
     u8g2_DrawUTF8(&oled, 0, offset, message);
     // u8g2_DrawBox(&oled, 0, 0, u8g2_GetDisplayWidth(&oled), u8g2_GetDisplayHeight(&oled));
     // u8g2_DrawFrame(&oled, 0, 0, u8g2_GetDisplayWidth(&oled), height);
-    oled_update_rot2_area(0, 0, tile_width, tile_height);
+    oled_friendly_update_rot2_area(0, 0, text_width, height);
+}
+
+void oled_friendly_splash(const char * message, const uint8_t * font) {
+
+    // Clear the screen
+    // u8g2_ClearBuffer(&oled);
+
+    // Get the font specs.
+    int8_t text_height = get_font_height(font);
+    int8_t text_offset = get_font_offset(font);
+    if (text_height == -1 || text_offset == -1) {
+        return;
+    }
+
+    // Set the font up
+    u8g2_SetFont(&oled, font);
+
+    // Get the text width
+    uint16_t text_width = u8g2_GetStrWidth(&oled, message);
+
+    uint16_t start_x = SCREEN_WIDTH / 2 - text_width / 2;
+    uint16_t start_y = SCREEN_HEIGHT / 2 - text_offset /2;
+
+    // Draw the black background.
+    u8g2_SetDrawColor(&oled, 0);
+    u8g2_DrawBox(&oled, start_x, start_y, text_width, text_height);
+    
+    // Draw the white border.
+    u8g2_SetDrawColor(&oled, 1);
+    u8g2_DrawFrame(&oled, start_x - 1, start_y - 1, text_width + 2, text_height);
+
+    // Draw the message
+    u8g2_DrawUTF8(&oled, start_x, start_y + text_offset + 2, message);
+
+    // Update only the relevant parts.
+    oled_friendly_update_rot2_area(start_x, start_y, text_width, text_height);
 }

@@ -55,10 +55,10 @@ PwmOut pwm2(PTA6);
 PwmOut pwm3(PTA7);
 
 // FIXME: Something is wrong with these pin 'numbers'
-//AnalogIn ain0(ADC0_SE16);
-//AnalogIn ain1(ADC1_SE16);
-//AnalogIn ain2(ADC1_SE18);
-//AnalogIn ain3(ADC1_SE23);
+// AnalogIn ain0(ADC0_SE16);
+// AnalogIn ain1(ADC1_SE16);
+// AnalogIn ain2(ADC1_SE18);
+// AnalogIn ain3(ADC1_SE23);
 
 DigitalOut oled_cs(PTC0);
 DigitalOut i2c_buff_nen(PTD12);     // /EN pin on the TCA9406 I2C buffer (inverted: 0=enable, 1=disable)

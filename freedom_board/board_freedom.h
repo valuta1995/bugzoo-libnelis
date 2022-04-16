@@ -61,10 +61,10 @@ extern PwmOut pwm3;
 
 
 // FIXME: Something is wrong with these pin 'numbers'
-extern AnalogIn ain0;
-extern AnalogIn ain1;
-extern AnalogIn ain2;
-extern AnalogIn ain3;
+// extern AnalogIn ain0;
+// extern AnalogIn ain1;
+// extern AnalogIn ain2;
+// extern AnalogIn ain3;
 
 extern DigitalOut oled_cs;
 /**

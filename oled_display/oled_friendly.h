@@ -2,6 +2,7 @@
 #define _OLED_FRIENDLY_H_
 
 #include "oled_ssd1322.h"
+#include <cstdint>
 
 #define FONT_TINY u8g2_font_tom_thumb_4x6_tf
 #define FONT_TINY_HEIGHT 6
@@ -43,7 +44,15 @@
  * @param message A c string containing the message (null terminated).
  * @param font The font to be used. Should be one of the fonts listed in this header file. Defaults to Medium.
  */
-void oled_friendly_display_one_line(char * message, const uint8_t * font=FONT_MEDIUM);
+void oled_friendly_display_one_line(const char * message, const uint8_t * font=FONT_MEDIUM);
+
+/**
+ * Displays a single line message to the middle of the oled display.
+ * The message looks like a pop up.
+ * @param message A c string containing the message (null terminated).
+ * @param font The font to be used. Should be one of the fonts listed in this header file. Defaults to Large.
+ */
+void oled_friendly_splash(const char * message, const uint8_t * font=FONT_LARGE);
 
 /**
  * Get the maximum height of any glyph in the font.
