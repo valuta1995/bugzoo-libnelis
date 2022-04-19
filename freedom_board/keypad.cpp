@@ -154,7 +154,7 @@ char keypad_get_char() {
 
 
 int keypad_get_int() {
-    char c = getchar();
+    char c = keypad_get_char();
     if ('0' <= c && c <= '9') {
         return c - '0';
     } else {
