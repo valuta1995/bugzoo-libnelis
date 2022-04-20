@@ -189,7 +189,7 @@ void oled_friendly_splash(const char * message, const uint8_t * font) {
 
     // Draw the black background.
     u8g2_SetDrawColor(&oled, 0);
-    u8g2_DrawBox(&oled, start_x, start_y, text_width, text_height);
+    u8g2_DrawBox(&oled, start_x - 2, start_y + 2, text_width + 4, text_height + 4);
     
     // Draw the white border.
     u8g2_SetDrawColor(&oled, 1);
