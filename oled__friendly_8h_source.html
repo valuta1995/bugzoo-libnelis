@@ -134,36 +134,49 @@ $(document).ready(function(){initNavTree('oled__friendly_8h_source.html',''); in
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"> * @param font The font to be used. Should be one of the fonts listed in this header file. Defaults to Medium.</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oled__friendly_8h.html#a6a462c53ff0c8384d586676d9bed768e">oled_friendly_display_one_line</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * message, <span class="keyword">const</span> uint8_t * font=<a class="code" href="oled__friendly_8h.html#a5c7fe6989ead3a5e9adcac39717eb69f">FONT_MEDIUM</a>);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"> * Displays a single line message to the middle of the oled display.</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"> * The message looks like a pop up.</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"> * @param message A c string containing the message (null terminated).</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"> * @param font The font to be used. Should be one of the fonts listed in this header file. Defaults to Large.</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oled__friendly_8h.html#af5251ece4672b417f692b23541a4815f">oled_friendly_splash</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * message, <span class="keyword">const</span> uint8_t * font=<a class="code" href="oled__friendly_8h.html#adb97ddaa53ea8abb0bf6e07ef53023a0">FONT_LARGE</a>);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"> * Get the maximum height of any glyph in the font.</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;int8_t <a class="code" href="oled__friendly_8h.html#a39507620e392ba14bf3f9b92014994c1">get_font_height</a>(<span class="keyword">const</span> uint8_t * font);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"> * Get the maximum height of any glyph of the font above the baseline.</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;int8_t <a class="code" href="oled__friendly_8h.html#a2d4e3bd00f791fb30ef34405331fff5e">get_font_offset</a>(<span class="keyword">const</span> uint8_t * font);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"> * Display a multi-line message. See one line version for more info.</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"> * @param x</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"> * @param y</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"> * @param w</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"> * @param h</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"> * @param message A c string containing the message (null terminated).</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"> * @param font The font to be used. Should be one of the fonts listed in this header file. Defaults to Medium.</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oled__friendly_8h.html#afc4691569b6dbcba21e45de8fe41ad87">oled_friendly_display_message</a>(uint16_t x, uint16_t y, uint16_t w, uint16_t h, <span class="keyword">const</span> <span class="keywordtype">char</span> * message, <span class="keyword">const</span> uint8_t * font=<a class="code" href="oled__friendly_8h.html#a5c7fe6989ead3a5e9adcac39717eb69f">FONT_MEDIUM</a>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"> * Displays a single line message to the middle of the oled display.</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"> * The message looks like a pop up.</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"> * @param message A c string containing the message (null terminated).</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"> * @param font The font to be used. Should be one of the fonts listed in this header file. Defaults to Large.</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oled__friendly_8h.html#af5251ece4672b417f692b23541a4815f">oled_friendly_splash</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * message, <span class="keyword">const</span> uint8_t * font=<a class="code" href="oled__friendly_8h.html#adb97ddaa53ea8abb0bf6e07ef53023a0">FONT_LARGE</a>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"> * Get the maximum height of any glyph in the font.</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;int8_t <a class="code" href="oled__friendly_8h.html#a39507620e392ba14bf3f9b92014994c1">get_font_height</a>(<span class="keyword">const</span> uint8_t * font);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"> * Get the maximum height of any glyph of the font above the baseline.</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;int8_t <a class="code" href="oled__friendly_8h.html#a2d4e3bd00f791fb30ef34405331fff5e">get_font_offset</a>(<span class="keyword">const</span> uint8_t * font);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aoled__ssd1322_8h_html"><div class="ttname"><a href="oled__ssd1322_8h.html">oled_ssd1322.h</a></div></div>
-<div class="ttc" id="aoled__friendly_8h_html_a2d4e3bd00f791fb30ef34405331fff5e"><div class="ttname"><a href="oled__friendly_8h.html#a2d4e3bd00f791fb30ef34405331fff5e">get_font_offset</a></div><div class="ttdeci">int8_t get_font_offset(const uint8_t *font)</div><div class="ttdef"><b>Definition:</b> <a href="oled__friendly_8cpp_source.html#l00032">oled_friendly.cpp:32</a></div></div>
+<div class="ttc" id="aoled__friendly_8h_html_a2d4e3bd00f791fb30ef34405331fff5e"><div class="ttname"><a href="oled__friendly_8h.html#a2d4e3bd00f791fb30ef34405331fff5e">get_font_offset</a></div><div class="ttdeci">int8_t get_font_offset(const uint8_t *font)</div><div class="ttdef"><b>Definition:</b> <a href="oled__friendly_8cpp_source.html#l00033">oled_friendly.cpp:33</a></div></div>
 <div class="ttc" id="aoled__friendly_8h_html_a5c7fe6989ead3a5e9adcac39717eb69f"><div class="ttname"><a href="oled__friendly_8h.html#a5c7fe6989ead3a5e9adcac39717eb69f">FONT_MEDIUM</a></div><div class="ttdeci">#define FONT_MEDIUM</div><div class="ttdef"><b>Definition:</b> <a href="oled__friendly_8h_source.html#l00015">oled_friendly.h:15</a></div></div>
 <div class="ttc" id="aoled__friendly_8h_html_adb97ddaa53ea8abb0bf6e07ef53023a0"><div class="ttname"><a href="oled__friendly_8h.html#adb97ddaa53ea8abb0bf6e07ef53023a0">FONT_LARGE</a></div><div class="ttdeci">#define FONT_LARGE</div><div class="ttdef"><b>Definition:</b> <a href="oled__friendly_8h_source.html#l00027">oled_friendly.h:27</a></div></div>
-<div class="ttc" id="aoled__friendly_8h_html_a39507620e392ba14bf3f9b92014994c1"><div class="ttname"><a href="oled__friendly_8h.html#a39507620e392ba14bf3f9b92014994c1">get_font_height</a></div><div class="ttdeci">int8_t get_font_height(const uint8_t *font)</div><div class="ttdef"><b>Definition:</b> <a href="oled__friendly_8cpp_source.html#l00010">oled_friendly.cpp:10</a></div></div>
-<div class="ttc" id="aoled__friendly_8h_html_af5251ece4672b417f692b23541a4815f"><div class="ttname"><a href="oled__friendly_8h.html#af5251ece4672b417f692b23541a4815f">oled_friendly_splash</a></div><div class="ttdeci">void oled_friendly_splash(const char *message, const uint8_t *font=FONT_LARGE)</div><div class="ttdef"><b>Definition:</b> <a href="oled__friendly_8cpp_source.html#l00147">oled_friendly.cpp:147</a></div></div>
-<div class="ttc" id="aoled__friendly_8h_html_a6a462c53ff0c8384d586676d9bed768e"><div class="ttname"><a href="oled__friendly_8h.html#a6a462c53ff0c8384d586676d9bed768e">oled_friendly_display_one_line</a></div><div class="ttdeci">void oled_friendly_display_one_line(const char *message, const uint8_t *font=FONT_MEDIUM)</div><div class="ttdef"><b>Definition:</b> <a href="oled__friendly_8cpp_source.html#l00114">oled_friendly.cpp:114</a></div></div>
+<div class="ttc" id="aoled__friendly_8h_html_a39507620e392ba14bf3f9b92014994c1"><div class="ttname"><a href="oled__friendly_8h.html#a39507620e392ba14bf3f9b92014994c1">get_font_height</a></div><div class="ttdeci">int8_t get_font_height(const uint8_t *font)</div><div class="ttdef"><b>Definition:</b> <a href="oled__friendly_8cpp_source.html#l00011">oled_friendly.cpp:11</a></div></div>
+<div class="ttc" id="aoled__friendly_8h_html_af5251ece4672b417f692b23541a4815f"><div class="ttname"><a href="oled__friendly_8h.html#af5251ece4672b417f692b23541a4815f">oled_friendly_splash</a></div><div class="ttdeci">void oled_friendly_splash(const char *message, const uint8_t *font=FONT_LARGE)</div><div class="ttdef"><b>Definition:</b> <a href="oled__friendly_8cpp_source.html#l00169">oled_friendly.cpp:169</a></div></div>
+<div class="ttc" id="aoled__friendly_8h_html_a6a462c53ff0c8384d586676d9bed768e"><div class="ttname"><a href="oled__friendly_8h.html#a6a462c53ff0c8384d586676d9bed768e">oled_friendly_display_one_line</a></div><div class="ttdeci">void oled_friendly_display_one_line(const char *message, const uint8_t *font=FONT_MEDIUM)</div><div class="ttdef"><b>Definition:</b> <a href="oled__friendly_8cpp_source.html#l00079">oled_friendly.cpp:79</a></div></div>
+<div class="ttc" id="aoled__friendly_8h_html_afc4691569b6dbcba21e45de8fe41ad87"><div class="ttname"><a href="oled__friendly_8h.html#afc4691569b6dbcba21e45de8fe41ad87">oled_friendly_display_message</a></div><div class="ttdeci">void oled_friendly_display_message(uint16_t x, uint16_t y, uint16_t w, uint16_t h, const char *message, const uint8_t *font=FONT_MEDIUM)</div><div class="ttdef"><b>Definition:</b> <a href="oled__friendly_8cpp_source.html#l00112">oled_friendly.cpp:112</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

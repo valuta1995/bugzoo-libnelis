@@ -150,6 +150,8 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a6a462c53ff0c8384d586676d9bed768e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oled__friendly_8h.html#a6a462c53ff0c8384d586676d9bed768e">oled_friendly_display_one_line</a> (const char *message, const uint8_t *font=<a class="el" href="oled__friendly_8h.html#a5c7fe6989ead3a5e9adcac39717eb69f">FONT_MEDIUM</a>)</td></tr>
 <tr class="separator:a6a462c53ff0c8384d586676d9bed768e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc4691569b6dbcba21e45de8fe41ad87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oled__friendly_8h.html#afc4691569b6dbcba21e45de8fe41ad87">oled_friendly_display_message</a> (uint16_t x, uint16_t y, uint16_t w, uint16_t h, const char *message, const uint8_t *font=<a class="el" href="oled__friendly_8h.html#a5c7fe6989ead3a5e9adcac39717eb69f">FONT_MEDIUM</a>)</td></tr>
+<tr class="separator:afc4691569b6dbcba21e45de8fe41ad87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5251ece4672b417f692b23541a4815f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oled__friendly_8h.html#af5251ece4672b417f692b23541a4815f">oled_friendly_splash</a> (const char *message, const uint8_t *font=<a class="el" href="oled__friendly_8h.html#adb97ddaa53ea8abb0bf6e07ef53023a0">FONT_LARGE</a>)</td></tr>
 <tr class="separator:af5251ece4672b417f692b23541a4815f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39507620e392ba14bf3f9b92014994c1"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oled__friendly_8h.html#a39507620e392ba14bf3f9b92014994c1">get_font_height</a> (const uint8_t *font)</td></tr>
@@ -560,7 +562,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Get the maximum height of any glyph in the font. </p>
 
-<p class="definition">Definition at line <a class="el" href="oled__friendly_8cpp_source.html#l00010">10</a> of file <a class="el" href="oled__friendly_8cpp_source.html">oled_friendly.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oled__friendly_8cpp_source.html#l00011">11</a> of file <a class="el" href="oled__friendly_8cpp_source.html">oled_friendly.cpp</a>.</p>
 
 </div>
 </div>
@@ -581,7 +583,72 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Get the maximum height of any glyph of the font above the baseline. </p>
 
-<p class="definition">Definition at line <a class="el" href="oled__friendly_8cpp_source.html#l00032">32</a> of file <a class="el" href="oled__friendly_8cpp_source.html">oled_friendly.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oled__friendly_8cpp_source.html#l00033">33</a> of file <a class="el" href="oled__friendly_8cpp_source.html">oled_friendly.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afc4691569b6dbcba21e45de8fe41ad87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc4691569b6dbcba21e45de8fe41ad87">&#9670;&nbsp;</a></span>oled_friendly_display_message()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oled_friendly_display_message </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>font</em> = <code><a class="el" href="oled__friendly_8h.html#a5c7fe6989ead3a5e9adcac39717eb69f">FONT_MEDIUM</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Display a multi-line message. See one line version for more info. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td></td></tr>
+    <tr><td class="paramname">y</td><td></td></tr>
+    <tr><td class="paramname">w</td><td></td></tr>
+    <tr><td class="paramname">h</td><td></td></tr>
+    <tr><td class="paramname">message</td><td>A c string containing the message (null terminated). </td></tr>
+    <tr><td class="paramname">font</td><td>The font to be used. Should be one of the fonts listed in this header file. Defaults to Medium. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="oled__friendly_8cpp_source.html#l00112">112</a> of file <a class="el" href="oled__friendly_8cpp_source.html">oled_friendly.cpp</a>.</p>
 
 </div>
 </div>
@@ -618,7 +685,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="oled__friendly_8cpp_source.html#l00114">114</a> of file <a class="el" href="oled__friendly_8cpp_source.html">oled_friendly.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oled__friendly_8cpp_source.html#l00079">79</a> of file <a class="el" href="oled__friendly_8cpp_source.html">oled_friendly.cpp</a>.</p>
 
 </div>
 </div>
@@ -655,7 +722,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="oled__friendly_8cpp_source.html#l00147">147</a> of file <a class="el" href="oled__friendly_8cpp_source.html">oled_friendly.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oled__friendly_8cpp_source.html#l00169">169</a> of file <a class="el" href="oled__friendly_8cpp_source.html">oled_friendly.cpp</a>.</p>
 
 </div>
 </div>
