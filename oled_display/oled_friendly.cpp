@@ -1,5 +1,6 @@
 #include "oled_friendly.h"
 #include <cstdint>
+#include <string>
 
 #define SCREEN_WIDTH 256
 #define SCREEN_WIDTH_TILES SCREEN_WIDTH / 8
@@ -51,29 +52,18 @@ int8_t get_font_offset(const uint8_t * font) {
 	}
 }
 
-uint8_t previous_x_tile = 0;
-uint8_t previous_y_tile = 0;
 uint8_t previous_tile_width = 0;
 uint8_t previous_tile_height = 0;
 
-uint8_t min(uint8_t n, uint8_t m) {
-    return n < m ? n : m;
-}
-
-uint8_t max(uint8_t n, uint8_t m) {
-    return n > m ? n : m;
-}
-
 void oled_friendly_update_rot2_area(uint16_t x, uint16_t y, uint16_t w, uint16_t h) {
-
     uint16_t x_end = x + w;
     uint16_t y_end = y + h;
 
-    uint16_t x_prime = (SCREEN_WIDTH - 1) - x_end;
-    uint16_t y_prime = (SCREEN_HEIGHT - 1) - y_end;
+    uint16_t x_prime = SCREEN_WIDTH - x_end;
+    uint16_t y_prime = SCREEN_HEIGHT - y_end;
 
-    uint16_t x_prime_end = (SCREEN_WIDTH - 1) - x;
-    uint16_t y_prime_end = (SCREEN_HEIGHT - 1) - y;
+    uint16_t x_prime_end = SCREEN_WIDTH - x;
+    uint16_t y_prime_end = SCREEN_HEIGHT - y;
 
     uint8_t x_tile = x_prime / 8;
     uint8_t y_tile = y_prime / 8;
@@ -83,32 +73,7 @@ void oled_friendly_update_rot2_area(uint16_t x, uint16_t y, uint16_t w, uint16_t
 
     uint8_t w_tile = x_tile_end - x_tile;
     uint8_t h_tile = y_tile_end - y_tile;
-
-    uint8_t final_x, final_y, final_x_end, final_y_end;
-    if (previous_tile_height != 0 && previous_tile_width != 0) {
-        uint8_t previous_x_tile_end = previous_x_tile + previous_tile_width;
-        uint8_t previous_y_tile_end = previous_y_tile + previous_tile_height;
-
-        final_x = min(previous_x_tile, x_tile);
-        final_y = min(previous_y_tile, y_tile);
-        final_x_end = max(previous_x_tile_end, x_tile_end);
-        final_y_end = max(previous_y_tile_end, y_tile_end);
-    } else {
-        final_x = x_tile;
-        final_y = y_tile;
-        final_x_end = x_tile_end;
-        final_y_end = y_tile_end;
-    }
-
-    previous_x_tile = x_tile;
-    previous_y_tile = y_tile;
-    previous_tile_height = h_tile;
-    previous_tile_width = w_tile;
-    
-    uint8_t final_w = final_x_end - final_x;
-    uint8_t final_h = final_y_end - final_y;
-
-    u8g2_UpdateDisplayArea(&oled, final_x, final_y, final_w, final_h);
+    u8g2_UpdateDisplayArea(&oled, x_tile, y_tile, w_tile, h_tile);
 }
 
 void oled_friendly_display_one_line(const char * message, const uint8_t * font) {
@@ -144,6 +109,63 @@ void oled_friendly_display_one_line(const char * message, const uint8_t * font) 
     oled_friendly_update_rot2_area(0, 0, text_width, height);
 }
 
+void oled_friendly_display_message(uint16_t x, uint16_t y, uint16_t w, uint16_t h, const char * message, const uint8_t * font) {
+    uint16_t num_tabs = 0;
+    for (uint16_t i = 0; i < strlen(message); i++) {
+        if (message[i] == '\t') {
+            num_tabs++;
+        }
+    }
+    uint16_t _i = 0;
+    char _message[strlen(message) + 3 * num_tabs];
+    uint16_t i_line = 0;
+    for (uint16_t i = 0; i < strlen(message); i++, _i++, i_line++) {
+        if (message[i] == '\n') {
+            i_line = 0;
+        }
+        if (message[i] == '\t') {
+            uint16_t delta = (i_line / 4 + 1) * 4 - i_line;
+            for (uint8_t _j = 0; _j < delta; _j++) {
+                _message[_i + _j] = ' ';
+            }
+            _i += delta - 1;
+        } else {
+            _message[_i] = message[i];
+        }
+    }
+
+    uint8_t font_height = get_font_height(font);
+    uint8_t max_lines = (h % font_height == 0 ? 0 : 1) + h/font_height;
+    const char * strings[max_lines];
+
+    uint16_t strindex = 0;
+    uint16_t count = 0;
+
+    strings[0] = _message;
+    count++;
+
+    while (_message[strindex] != '\0') {
+        if (_message[strindex] == '\n') {
+            _message[strindex] = '\0';
+            strings[count] = &_message[strindex + 1];
+            count++;
+        }
+        strindex++;
+    }
+
+    uint16_t y_offset = get_font_offset(font);
+
+    for (uint16_t i = 0; i < count; i++) {
+        printf("%s\n", strings[i]);
+        
+        u8g2_DrawUTF8(&oled, x, y + y_offset + font_height * i, strings[i]);
+    }
+
+    
+    oled_friendly_update_rot2_area(x, y, w, h);
+
+}
+
 void oled_friendly_splash(const char * message, const uint8_t * font) {
 
     // Clear the screen
@@ -167,15 +189,15 @@ void oled_friendly_splash(const char * message, const uint8_t * font) {
 
     // Draw the black background.
     u8g2_SetDrawColor(&oled, 0);
-    u8g2_DrawBox(&oled, start_x - 2, start_y - 1, text_width + 2, text_height + 1);
+    u8g2_DrawBox(&oled, start_x, start_y, text_width, text_height);
     
     // Draw the white border.
     u8g2_SetDrawColor(&oled, 1);
-    u8g2_DrawFrame(&oled, start_x - 2, start_y - 1, text_width + 4, text_height + 1);
+    u8g2_DrawFrame(&oled, start_x - 1, start_y - 1, text_width + 2, text_height);
 
     // Draw the message
     u8g2_DrawUTF8(&oled, start_x, start_y + text_offset + 2, message);
 
     // Update only the relevant parts.
-    oled_friendly_update_rot2_area(start_x - 2, start_y - 1, text_width + 4, text_height + 1);
+    oled_friendly_update_rot2_area(start_x, start_y, text_width, text_height);
 }

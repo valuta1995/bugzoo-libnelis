@@ -46,6 +46,18 @@
  */
 void oled_friendly_display_one_line(const char * message, const uint8_t * font=FONT_MEDIUM);
 
+
+/**
+ * Display a multi-line message. See one line version for more info.
+ * @param x
+ * @param y
+ * @param w
+ * @param h
+ * @param message A c string containing the message (null terminated).
+ * @param font The font to be used. Should be one of the fonts listed in this header file. Defaults to Medium.
+ */
+void oled_friendly_display_message(uint16_t x, uint16_t y, uint16_t w, uint16_t h, const char * message, const uint8_t * font=FONT_MEDIUM);
+
 /**
  * Displays a single line message to the middle of the oled display.
  * The message looks like a pop up.
