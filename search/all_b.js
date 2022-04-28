@@ -146,12 +146,13 @@ var searchData=
   ['menu_5fpush_286',['menu_push',['../menus_8cpp.html#a6931f6f976dcd4f2e677c9de918607ce',1,'menu_push(struct menu_t *new_menu):&#160;menus.cpp'],['../menus_8h.html#a6931f6f976dcd4f2e677c9de918607ce',1,'menu_push(struct menu_t *new_menu):&#160;menus.cpp']]],
   ['menu_5ft_287',['menu_t',['../structmenu__t.html',1,'']]],
   ['menu_5ftitle_5ffont_288',['MENU_TITLE_FONT',['../menus_8h.html#afe5b4278afe4e349e1ea5448c52f92b2',1,'menus.h']]],
-  ['menus_2ecpp_289',['menus.cpp',['../menus_8cpp.html',1,'']]],
-  ['menus_2eh_290',['menus.h',['../menus_8h.html',1,'']]],
-  ['mf_5fdo_5fnothig_291',['mf_do_nothig',['../menus_8cpp.html#a6bedd98d046a5e98164fee7ade39f35a',1,'menus.cpp']]],
-  ['mf_5fserial_5fecho_292',['mf_serial_echo',['../menus_8cpp.html#ae247714d8eea61aa05eccf48920b48f3',1,'menus.cpp']]],
-  ['mi_5fdo_5fnothing_293',['mi_do_nothing',['../menus_8cpp.html#a38b8b3e282a322c686b4faf811c38073',1,'mi_do_nothing():&#160;menus.cpp'],['../menus_8h.html#a38b8b3e282a322c686b4faf811c38073',1,'mi_do_nothing():&#160;menus.cpp']]],
-  ['mi_5fdummy_5fserial_294',['mi_dummy_serial',['../menus_8cpp.html#a699079b7162a92eb967bd66784306e05',1,'mi_dummy_serial():&#160;menus.cpp'],['../menus_8h.html#a699079b7162a92eb967bd66784306e05',1,'mi_dummy_serial():&#160;menus.cpp']]],
-  ['millis_295',['millis',['../board__freedom_8cpp.html#a5b66b314af77147a5b8eb1e44498839e',1,'millis():&#160;board_freedom.cpp'],['../board__freedom_8h.html#a5b66b314af77147a5b8eb1e44498839e',1,'millis():&#160;board_freedom.cpp']]],
-  ['millis_5fticker_296',['millis_ticker',['../board__freedom_8cpp.html#a9e37f1d611c1b858d30dbb337023f74c',1,'board_freedom.cpp']]]
+  ['menu_5fyield_289',['menu_yield',['../menus_8cpp.html#ac8eb1a551872d1403ec31223566eb74e',1,'menu_yield():&#160;menus.cpp'],['../menus_8h.html#ac8eb1a551872d1403ec31223566eb74e',1,'menu_yield():&#160;menus.cpp']]],
+  ['menus_2ecpp_290',['menus.cpp',['../menus_8cpp.html',1,'']]],
+  ['menus_2eh_291',['menus.h',['../menus_8h.html',1,'']]],
+  ['mf_5fdo_5fnothig_292',['mf_do_nothig',['../menus_8cpp.html#a6bedd98d046a5e98164fee7ade39f35a',1,'menus.cpp']]],
+  ['mf_5fserial_5fecho_293',['mf_serial_echo',['../menus_8cpp.html#ae247714d8eea61aa05eccf48920b48f3',1,'menus.cpp']]],
+  ['mi_5fdo_5fnothing_294',['mi_do_nothing',['../menus_8cpp.html#a38b8b3e282a322c686b4faf811c38073',1,'mi_do_nothing():&#160;menus.cpp'],['../menus_8h.html#a38b8b3e282a322c686b4faf811c38073',1,'mi_do_nothing():&#160;menus.cpp']]],
+  ['mi_5fdummy_5fserial_295',['mi_dummy_serial',['../menus_8cpp.html#a699079b7162a92eb967bd66784306e05',1,'mi_dummy_serial():&#160;menus.cpp'],['../menus_8h.html#a699079b7162a92eb967bd66784306e05',1,'mi_dummy_serial():&#160;menus.cpp']]],
+  ['millis_296',['millis',['../board__freedom_8cpp.html#a5b66b314af77147a5b8eb1e44498839e',1,'millis():&#160;board_freedom.cpp'],['../board__freedom_8h.html#a5b66b314af77147a5b8eb1e44498839e',1,'millis():&#160;board_freedom.cpp']]],
+  ['millis_5fticker_297',['millis_ticker',['../board__freedom_8cpp.html#a9e37f1d611c1b858d30dbb337023f74c',1,'board_freedom.cpp']]]
 ];

@@ -8,6 +8,7 @@ var menus_8cpp =
     [ "menu_draw", "menus_8cpp.html#abf4b8cb8c8426a76d32668e9f551d725", null ],
     [ "menu_pop", "menus_8cpp.html#afcd513cb39672a9475b183bd6bac5329", null ],
     [ "menu_push", "menus_8cpp.html#a6931f6f976dcd4f2e677c9de918607ce", null ],
+    [ "menu_yield", "menus_8cpp.html#ac8eb1a551872d1403ec31223566eb74e", null ],
     [ "mf_do_nothig", "menus_8cpp.html#a6bedd98d046a5e98164fee7ade39f35a", null ],
     [ "mf_serial_echo", "menus_8cpp.html#ae247714d8eea61aa05eccf48920b48f3", null ],
     [ "currently_active_menu", "menus_8cpp.html#a41204a101420afa5c92ec677813aac3d", null ],

@@ -10,6 +10,7 @@ var menus_8h =
     [ "menu_draw", "menus_8h.html#abf4b8cb8c8426a76d32668e9f551d725", null ],
     [ "menu_pop", "menus_8h.html#afcd513cb39672a9475b183bd6bac5329", null ],
     [ "menu_push", "menus_8h.html#a6931f6f976dcd4f2e677c9de918607ce", null ],
+    [ "menu_yield", "menus_8h.html#ac8eb1a551872d1403ec31223566eb74e", null ],
     [ "currently_active_menu", "menus_8h.html#a3956243a40e1990539a4a07b9642ddbc", null ],
     [ "mi_do_nothing", "menus_8h.html#a38b8b3e282a322c686b4faf811c38073", null ],
     [ "mi_dummy_serial", "menus_8h.html#a699079b7162a92eb967bd66784306e05", null ]

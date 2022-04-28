@@ -51,7 +51,7 @@ var NAVTREEINDEX =
 [
 "adc_8cpp.html",
 "keypad_8h.html",
-"vukip-logo_8h.html#aa770ee35ca534fe753d28a414f788f7d"
+"vukip-logo_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

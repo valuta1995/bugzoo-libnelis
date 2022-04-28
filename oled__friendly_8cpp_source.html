@@ -288,7 +288,7 @@ $(document).ready(function(){initNavTree('oled__friendly_8cpp_source.html',''); 
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    u8g2_DrawUTF8(&amp;<a class="code" href="oled__ssd1322_8cpp.html#a758db5fed190da60e5bc81ebd40f31c5">oled</a>, start_x, start_y + text_offset + 2, message);</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="comment">// Update only the relevant parts.</span></div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <a class="code" href="oled__friendly_8cpp.html#a99fdd3fb39ad12cece5a4aeae5c00794">oled_friendly_update_rot2_area</a>(start_x, start_y, text_width, text_height);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <a class="code" href="oled__friendly_8cpp.html#a99fdd3fb39ad12cece5a4aeae5c00794">oled_friendly_update_rot2_area</a>(start_x - 2, start_y + 2, text_width + 4, text_height + 4);</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
