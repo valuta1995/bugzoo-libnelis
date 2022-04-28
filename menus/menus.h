@@ -98,4 +98,9 @@ void menu_activate_menu(struct menu_t * new_menu);
  */
 bool menu_deactivate_menu();
 
+/**
+ * Let the menu operating system run.
+ */
+void menu_yield();
+
 #endif // _MENUS_H_

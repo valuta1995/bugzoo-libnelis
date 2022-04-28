@@ -149,3 +149,36 @@ bool menu_activate_item(uint8_t id) {
     }
     return true;
 }
+
+void menu_yield() {
+    while (true) {
+        bool error_state = false;
+        while (!keypad_has_key()) ThisThread::sleep_for(25ms);
+
+        char c = keypad_get_char();
+        if ('0' <= c && c <= '9') {
+            int8_t key_number = c - '0';
+            int8_t item_id = key_number == 0 ? 10 - 1 : key_number - 1;
+ 
+            if (!menu_activate_item(item_id)) {
+                error_state = true;
+            }
+        } else if (c == '\e' || c == '0') {
+            if (!menu_deactivate_menu()) {
+                error_state = true;
+            }
+        } else {
+            error_state = true;
+        }
+
+        if (error_state) {
+            buzz = 1;
+            ThisThread::sleep_for(5ms);
+            buzz = 0;
+            oled_friendly_splash("Unknown button.");
+            ThisThread::sleep_for(1s);
+            menu_draw(currently_active_menu);
+            keypad_clear_keys();
+        }
+    }
+}
