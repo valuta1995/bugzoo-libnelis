@@ -122,11 +122,15 @@ Functions</h2></td></tr>
 <tr class="separator:ae26d8deb376e22b044ac7ea38dc14bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8eb1a551872d1403ec31223566eb74e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menus_8cpp.html#ac8eb1a551872d1403ec31223566eb74e">menu_yield</a> ()</td></tr>
 <tr class="separator:ac8eb1a551872d1403ec31223566eb74e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac982793b5e8bd7548d6f4e1defa509db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menus_8cpp.html#ac982793b5e8bd7548d6f4e1defa509db">menu_unyield</a> ()</td></tr>
+<tr class="separator:ac982793b5e8bd7548d6f4e1defa509db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a41204a101420afa5c92ec677813aac3d"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structmenu__t.html">menu_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menus_8cpp.html#a41204a101420afa5c92ec677813aac3d">currently_active_menu</a> = NULL</td></tr>
 <tr class="separator:a41204a101420afa5c92ec677813aac3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a445b0453059ca17754d2175e5e5b501a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menus_8cpp.html#a445b0453059ca17754d2175e5e5b501a">menu_running</a> = false</td></tr>
+<tr class="separator:a445b0453059ca17754d2175e5e5b501a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a699079b7162a92eb967bd66784306e05"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structmenu__t.html">menu_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menus_8cpp.html#a699079b7162a92eb967bd66784306e05">mi_dummy_serial</a></td></tr>
 <tr class="separator:a699079b7162a92eb967bd66784306e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38b8b3e282a322c686b4faf811c38073"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structmenu__t.html">menu_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menus_8cpp.html#a38b8b3e282a322c686b4faf811c38073">mi_do_nothing</a></td></tr>
@@ -149,7 +153,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="menus_8cpp_source.html#l00036">36</a> of file <a class="el" href="menus_8cpp_source.html">menus.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="menus_8cpp_source.html#l00038">38</a> of file <a class="el" href="menus_8cpp_source.html">menus.cpp</a>.</p>
 
 </div>
 </div>
@@ -191,7 +195,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="menus_8cpp_source.html#l00029">29</a> of file <a class="el" href="menus_8cpp_source.html">menus.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="menus_8cpp_source.html#l00031">31</a> of file <a class="el" href="menus_8cpp_source.html">menus.cpp</a>.</p>
 
 </div>
 </div>
@@ -218,7 +222,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>false if the item does not exist. true if the display/action was succesful. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="menus_8cpp_source.html#l00136">136</a> of file <a class="el" href="menus_8cpp_source.html">menus.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="menus_8cpp_source.html#l00138">138</a> of file <a class="el" href="menus_8cpp_source.html">menus.cpp</a>.</p>
 
 </div>
 </div>
@@ -244,7 +248,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="menus_8cpp_source.html#l00122">122</a> of file <a class="el" href="menus_8cpp_source.html">menus.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="menus_8cpp_source.html#l00124">124</a> of file <a class="el" href="menus_8cpp_source.html">menus.cpp</a>.</p>
 
 </div>
 </div>
@@ -264,7 +268,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Pop a menu and draws the prior menu. Equivalent to calling menu_pop and then menu_draw(currently_active_menu). </p><dl class="section return"><dt>Returns</dt><dd>false on failure, true on success. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="menus_8cpp_source.html#l00127">127</a> of file <a class="el" href="menus_8cpp_source.html">menus.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="menus_8cpp_source.html#l00129">129</a> of file <a class="el" href="menus_8cpp_source.html">menus.cpp</a>.</p>
 
 </div>
 </div>
@@ -290,7 +294,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="menus_8cpp_source.html#l00047">47</a> of file <a class="el" href="menus_8cpp_source.html">menus.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="menus_8cpp_source.html#l00049">49</a> of file <a class="el" href="menus_8cpp_source.html">menus.cpp</a>.</p>
 
 </div>
 </div>
@@ -310,7 +314,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Remove the currently active menu from the stack and return it. </p><dl class="section return"><dt>Returns</dt><dd>The menu that is active. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="menus_8cpp_source.html#l00107">107</a> of file <a class="el" href="menus_8cpp_source.html">menus.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="menus_8cpp_source.html#l00109">109</a> of file <a class="el" href="menus_8cpp_source.html">menus.cpp</a>.</p>
 
 </div>
 </div>
@@ -336,7 +340,26 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="menus_8cpp_source.html#l00117">117</a> of file <a class="el" href="menus_8cpp_source.html">menus.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="menus_8cpp_source.html#l00119">119</a> of file <a class="el" href="menus_8cpp_source.html">menus.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac982793b5e8bd7548d6f4e1defa509db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac982793b5e8bd7548d6f4e1defa509db">&#9670;&nbsp;</a></span>menu_unyield()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void menu_unyield </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="menus_8cpp_source.html#l00190">190</a> of file <a class="el" href="menus_8cpp_source.html">menus.cpp</a>.</p>
 
 </div>
 </div>
@@ -356,7 +379,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Let the menu operating system run. </p>
 
-<p class="definition">Definition at line <a class="el" href="menus_8cpp_source.html#l00153">153</a> of file <a class="el" href="menus_8cpp_source.html">menus.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="menus_8cpp_source.html#l00155">155</a> of file <a class="el" href="menus_8cpp_source.html">menus.cpp</a>.</p>
 
 </div>
 </div>
@@ -386,7 +409,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="menus_8cpp_source.html#l00020">20</a> of file <a class="el" href="menus_8cpp_source.html">menus.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="menus_8cpp_source.html#l00022">22</a> of file <a class="el" href="menus_8cpp_source.html">menus.cpp</a>.</p>
 
 </div>
 </div>
@@ -416,7 +439,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="menus_8cpp_source.html#l00009">9</a> of file <a class="el" href="menus_8cpp_source.html">menus.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="menus_8cpp_source.html#l00011">11</a> of file <a class="el" href="menus_8cpp_source.html">menus.cpp</a>.</p>
 
 </div>
 </div>
@@ -435,6 +458,22 @@ Variables</h2></td></tr>
 <p>A pointer to the currently active menu. Make sure this is set before using menus. </p>
 
 <p class="definition">Definition at line <a class="el" href="menus_8cpp_source.html#l00007">7</a> of file <a class="el" href="menus_8cpp_source.html">menus.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a445b0453059ca17754d2175e5e5b501a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a445b0453059ca17754d2175e5e5b501a">&#9670;&nbsp;</a></span>menu_running</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool menu_running = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="menus_8cpp_source.html#l00009">9</a> of file <a class="el" href="menus_8cpp_source.html">menus.cpp</a>.</p>
 
 </div>
 </div>
@@ -457,7 +496,7 @@ Variables</h2></td></tr>
 <div class="line">}</div>
 </div><!-- fragment --><p>A simple menu entry that does nothing. The action is an empty function. </p>
 
-<p class="definition">Definition at line <a class="el" href="menus_8cpp_source.html#l00022">22</a> of file <a class="el" href="menus_8cpp_source.html">menus.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="menus_8cpp_source.html#l00024">24</a> of file <a class="el" href="menus_8cpp_source.html">menus.cpp</a>.</p>
 
 </div>
 </div>
@@ -480,14 +519,14 @@ Variables</h2></td></tr>
 <div class="line">}</div>
 </div><!-- fragment --><p>A simple menu entry that simply prints the item number and the menu it is in over serial. </p>
 
-<p class="definition">Definition at line <a class="el" href="menus_8cpp_source.html#l00013">13</a> of file <a class="el" href="menus_8cpp_source.html">menus.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="menus_8cpp_source.html#l00015">15</a> of file <a class="el" href="menus_8cpp_source.html">menus.cpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="amenus_8cpp_html_a6bedd98d046a5e98164fee7ade39f35a"><div class="ttname"><a href="menus_8cpp.html#a6bedd98d046a5e98164fee7ade39f35a">mf_do_nothig</a></div><div class="ttdeci">void mf_do_nothig(uint8_t entry_id, struct menu_t *caller)</div><div class="ttdef"><b>Definition:</b> <a href="menus_8cpp_source.html#l00020">menus.cpp:20</a></div></div>
-<div class="ttc" id="amenus_8cpp_html_ae247714d8eea61aa05eccf48920b48f3"><div class="ttname"><a href="menus_8cpp.html#ae247714d8eea61aa05eccf48920b48f3">mf_serial_echo</a></div><div class="ttdeci">void mf_serial_echo(uint8_t entry_id, struct menu_t *caller)</div><div class="ttdef"><b>Definition:</b> <a href="menus_8cpp_source.html#l00009">menus.cpp:9</a></div></div>
+<div class="ttc" id="amenus_8cpp_html_a6bedd98d046a5e98164fee7ade39f35a"><div class="ttname"><a href="menus_8cpp.html#a6bedd98d046a5e98164fee7ade39f35a">mf_do_nothig</a></div><div class="ttdeci">void mf_do_nothig(uint8_t entry_id, struct menu_t *caller)</div><div class="ttdef"><b>Definition:</b> <a href="menus_8cpp_source.html#l00022">menus.cpp:22</a></div></div>
+<div class="ttc" id="amenus_8cpp_html_ae247714d8eea61aa05eccf48920b48f3"><div class="ttname"><a href="menus_8cpp.html#ae247714d8eea61aa05eccf48920b48f3">mf_serial_echo</a></div><div class="ttdeci">void mf_serial_echo(uint8_t entry_id, struct menu_t *caller)</div><div class="ttdef"><b>Definition:</b> <a href="menus_8cpp_source.html#l00011">menus.cpp:11</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
