@@ -6,6 +6,8 @@
 
 struct menu_t * currently_active_menu = NULL;
 
+bool menu_running = false;
+
 void mf_serial_echo(uint8_t entry_id, struct menu_t * caller) {
     printf("Dummy selected at entry number %d! From menu entry %s\n", entry_id, caller->name);
 }
@@ -151,9 +153,11 @@ bool menu_activate_item(uint8_t id) {
 }
 
 void menu_yield() {
-    while (true) {
+    menu_running = true;
+    while (menu_running) {
         bool error_state = false;
-        while (!keypad_has_key()) ThisThread::sleep_for(25ms);
+        while (!keypad_has_key() && menu_running) ThisThread::sleep_for(25ms);
+        if (!menu_running) break;
 
         char c = keypad_get_char();
         if ('0' <= c && c <= '9') {
@@ -181,4 +185,8 @@ void menu_yield() {
             keypad_clear_keys();
         }
     }
+}
+
+void menu_unyield() {
+    menu_running = false;
 }
