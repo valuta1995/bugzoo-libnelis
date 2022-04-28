@@ -199,5 +199,5 @@ void oled_friendly_splash(const char * message, const uint8_t * font) {
     u8g2_DrawUTF8(&oled, start_x, start_y + text_offset + 2, message);
 
     // Update only the relevant parts.
-    oled_friendly_update_rot2_area(start_x, start_y, text_width, text_height);
+    oled_friendly_update_rot2_area(start_x - 2, start_y + 2, text_width + 4, text_height + 4);
 }
