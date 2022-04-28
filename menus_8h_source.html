@@ -191,8 +191,13 @@ $(document).ready(function(){initNavTree('menus_8h_source.html',''); initResizab
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment"> * Let the menu operating system run.</span></div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keywordtype">void</span> <a class="code" href="menus_8h.html#ac8eb1a551872d1403ec31223566eb74e">menu_yield</a>();</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif // _MENUS_H_</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment"> * Stop the menu os, returning instead to where menu_yield() was called.</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keywordtype">void</span> <a class="code" href="menus_8h.html#ac982793b5e8bd7548d6f4e1defa509db">menu_unyield</a>();</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#endif // _MENUS_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="amenus_8h_html_a8bb80e767a595f53d1bed680948db033"><div class="ttname"><a href="menus_8h.html#a8bb80e767a595f53d1bed680948db033">menu_activate_menu</a></div><div class="ttdeci">void menu_activate_menu(struct menu_t *new_menu)</div><div class="ttdef"><b>Definition:</b> <a href="menus_8cpp_source.html#l00124">menus.cpp:124</a></div></div>
@@ -210,6 +215,7 @@ $(document).ready(function(){initNavTree('menus_8h_source.html',''); initResizab
 <div class="ttc" id="amenus_8h_html_a38b8b3e282a322c686b4faf811c38073"><div class="ttname"><a href="menus_8h.html#a38b8b3e282a322c686b4faf811c38073">mi_do_nothing</a></div><div class="ttdeci">struct menu_t mi_do_nothing</div><div class="ttdef"><b>Definition:</b> <a href="menus_8cpp_source.html#l00024">menus.cpp:24</a></div></div>
 <div class="ttc" id="astructmenu__t_html_a96502e316226e44d648f995f3950dc02"><div class="ttname"><a href="structmenu__t.html#a96502e316226e44d648f995f3950dc02">menu_t::sub_menus</a></div><div class="ttdeci">struct menu_t * sub_menus[32]</div><div class="ttdef"><b>Definition:</b> <a href="menus_8h_source.html#l00035">menus.h:35</a></div></div>
 <div class="ttc" id="amenus_8h_html_a443d6d4f41531afa0ffed14004be15e7"><div class="ttname"><a href="menus_8h.html#a443d6d4f41531afa0ffed14004be15e7">menu_func_ptr_t</a></div><div class="ttdeci">void(* menu_func_ptr_t)(uint8_t entry_id, struct menu_t *caller)</div><div class="ttdef"><b>Definition:</b> <a href="menus_8h_source.html#l00013">menus.h:13</a></div></div>
+<div class="ttc" id="amenus_8h_html_ac982793b5e8bd7548d6f4e1defa509db"><div class="ttname"><a href="menus_8h.html#ac982793b5e8bd7548d6f4e1defa509db">menu_unyield</a></div><div class="ttdeci">void menu_unyield()</div><div class="ttdef"><b>Definition:</b> <a href="menus_8cpp_source.html#l00190">menus.cpp:190</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

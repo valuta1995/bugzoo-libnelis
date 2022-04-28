@@ -51,7 +51,7 @@ var NAVTREEINDEX =
 [
 "adc_8cpp.html",
 "keypad_8h.html",
-"u8g2__mbed__k66f_8h.html#ad7ee826d0dcd1a287ed0d984a25cf042"
+"u8g2__mbed__k66f_8h.html#aa752ca2ae5ec6868dceff30fd71531c1"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
