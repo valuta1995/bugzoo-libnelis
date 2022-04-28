@@ -103,4 +103,9 @@ bool menu_deactivate_menu();
  */
 void menu_yield();
 
+/**
+ * Stop the menu os, returning instead to where menu_yield() was called.
+ */
+void menu_unyield();
+
 #endif // _MENUS_H_
